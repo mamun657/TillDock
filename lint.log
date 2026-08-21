@@ -1,0 +1,161 @@
+﻿To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.3.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+.\gradlew : Warning: SDK processing. This version only understands SDK XML versions up to 3 but an SDK XML file of 
+version 4 was encountered. This can happen if you use versions of Android Studio and the command-line tools that were 
+released at different times.
+At line:1 char:1
++ .\gradlew :app:lintDebug --console=plain --no-daemon 2>&1 | Out-File  ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Warning: SDK pr...ifferent times.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:dataBindingMergeDependencyArtifactsDebug UP-TO-DATE
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:mergeDebugResources UP-TO-DATE
+> Task :app:packageDebugResources UP-TO-DATE
+> Task :app:processDebugNavigationResources UP-TO-DATE
+> Task :app:parseDebugLocalResources UP-TO-DATE
+> Task :app:dataBindingGenBaseClassesDebug UP-TO-DATE
+> Task :app:generateDebugBuildConfig UP-TO-DATE
+> Task :app:generateDebugRFile UP-TO-DATE
+> Task :app:compileDebugKotlin NO-SOURCE
+> Task :app:javaPreCompileDebug UP-TO-DATE
+> Task :app:compileDebugJavaWithJavac UP-TO-DATE
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+> Task :app:mapDebugSourceSetPaths UP-TO-DATE
+> Task :app:compileDebugNavigationResources UP-TO-DATE
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+> Task :app:processDebugMainManifest UP-TO-DATE
+> Task :app:processDebugManifest UP-TO-DATE
+> Task :app:processDebugManifestForPackage UP-TO-DATE
+> Task :app:processDebugResources UP-TO-DATE
+> Task :app:bundleDebugClassesToCompileJar UP-TO-DATE
+> Task :app:preDebugAndroidTestBuild SKIPPED
+> Task :app:generateDebugAndroidTestLintModel UP-TO-DATE
+> Task :app:extractProguardFiles UP-TO-DATE
+> Task :app:generateDebugLintReportModel UP-TO-DATE
+> Task :app:preDebugUnitTestBuild UP-TO-DATE
+> Task :app:generateDebugUnitTestLintModel UP-TO-DATE
+> Task :app:lintAnalyzeDebug
+> Task :app:lintAnalyzeDebugAndroidTest
+> Task :app:lintAnalyzeDebugUnitTest
+> Task :app:lintAnalyzeDebug FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:lintAnalyzeDebug'.
+> A failure occurred while executing com.android.build.gradle.internal.lint.AndroidLintWorkAction
+   > Unexpected failure during lint analysis (this is a bug in lint or one of the libraries it depends on)
+     
+     Message: Unexpected failure during lint analysis (this is a bug in lint or one of the libraries it depends on)
+     
+     Message: Flight Recorder is not supported on this VM
+     Stack: \`InternalError:JVMSupport.ensureWithInternalError(JVMSupport.java:65)ΓåÉEventType.getEventType(EventType.j
+ava:213)ΓåÉLLFlightRecorder.<clinit>(LLFlightRecorder.kt:55)ΓåÉLLFirTargetResolver.performResolve(LLFirTargetResolver.k
+t:284)ΓåÉLLFirTargetResolver.performAction(LLFirTargetResolver.kt:272)ΓåÉLLFirSingleResolveTarget.visitTargetElement(LL
+FirSingleResolveTarget.kt:36)ΓåÉLLFirResolveTarget.goToTarget(LLFirResolveTarget.kt:83)ΓåÉLLFirResolveTarget.goToTarget
+$lambda$1(LLFirResolveTarget.kt:75)ΓåÉLLFirTargetResolver.withContainingScript(LLFirTargetResolver.kt:223)ΓåÉLLFirTarge
+tResolver.withScript(LLFirTargetResolver.kt:217)ΓåÉLLFirResolveTarget.goToTarget(LLFirResolveTarget.kt:75)ΓåÉLLFirResol
+veTarget.goToTarget$lambda$2(LLFirResolveTarget.kt:76)ΓåÉAbstractFirSpecificAnnotationResolveTransformer.withFileAndFil
+eScopes(AbstractFirSpecificAnnotationResolveTransformer.kt:510)ΓåÉLLFirCompilerRequiredAnnotationsTargetResolver.withCo
+ntainingFile(LLFirCompilerAnnotationsLazyResolver.kt:148)ΓåÉLLFirTargetResolver.withFile(LLFirTargetResolver.kt:205)ΓåÉ
+LLFirResolveTarget.goToTarget(LLFirResolveTarget.kt:76)ΓåÉLLFirResolveTarget.goToTarget(LLFirResolveTarget.kt:65)ΓåÉLLF
+irResolveTarget.visit(LLFirResolveTarget.kt:60)ΓåÉLLFirTargetResolver.resolveDesignation(LLFirTargetResolver.kt:268)ΓåÉ
+LLFirLazyResolver.resolve(LLFirLazyResolver.kt:35)ΓåÉLLFirLazyResolverRunner.runLazyResolverByPhase(LLFirLazyResolverRu
+nner.kt:29)ΓåÉLLFirModuleLazyDeclarationResolver.lazyResolveTargets(LLFirModuleLazyDeclarationResolver.kt:146)ΓåÉLLFirM
+oduleLazyDeclarationResolver.lazyResolve(LLFirModuleLazyDeclarationResolver.kt:228)ΓåÉLLFirLazyDeclarationResolver.lazy
+ResolveToPhase(LLFirLazyDeclarationResolver.kt:27)ΓåÉFirLazyDeclarationResolverKt$lazyResolveToPhase$1.invoke(FirLazyDe
+clarationResolver.kt:134)ΓåÉFirLazyDeclarationResolverKt$lazyResolveToPhase$1.invoke(FirLazyDeclarationResolver.kt:134)
+ΓåÉFirLazyDeclarationResolverKt.invokeLazyResolveToPhase(FirLazyDeclarationResolver.kt:213)ΓåÉFirLazyDeclarationResolve
+rKt.lazyResolveToPhase(FirLazyDeclarationResolver.kt:134)ΓåÉFirLazyDeclarationResolverKt.lazyResolveToPhase(FirLazyDecl
+arationResolver.kt:125)ΓåÉFirCallableSymbol.ensureType(FirCallableSymbol.kt:136)ΓåÉFirCallableSymbol.calculateReturnTyp
+e(FirCallableSymbol.kt:45)ΓåÉFirCallableSymbol.getResolvedReturnTypeRef(FirCallableSymbol.kt:40)ΓåÉFirCallableSymbol.ge
+tResolvedReturnType(FirCallableSymbol.kt:53)ΓåÉKaFirTypeAndAnnotationsKt.returnType(KaFirTypeAndAnnotations.kt:23)ΓåÉKa
+FirKotlinPropertySymbol.getReturnType(KaFirKotlinPropertySymbol.kt:60)ΓåÉSymbolLightClassUtilsKt.hasValueClassInReturnT
+ype(symbolLightClassUtils.kt:514)ΓåÉSymbolLightAccessorMethod$Companion$Context$Companion.create(SymbolLightAccessorMet
+hod.kt:433)ΓåÉSymbolLightAccessorMethod$Companion.createPropertyAccessors$symbol_light_classes(SymbolLightAccessorMetho
+d.kt:462)ΓåÉSymbolLightAccessorMethod$Companion.createPropertyAccessors$symbol_light_classes$default(SymbolLightAccesso
+rMethod.kt:443)ΓåÉSymbolLightClassUtilsKt.createMethods$handleDeclaration(symbolLightClassUtils.kt:136)ΓåÉSymbolLightCl
+assUtilsKt.createMethods(symbolLightClassUtils.kt:151)ΓåÉSymbolLightClassUtilsKt.createMethods$default(symbolLightClass
+Utils.kt:115)ΓåÉSymbolLightClassForScript$getOwnMethods$$inlined$cachedValue$1.compute(symbolLightUtils.kt:365)ΓåÉCache
+dValuesManager$NonPhysicalPsiHandlerProvider.compute(CachedValuesManager.java:222)ΓåÉCachedValuesManager$NonPhysicalPsi
+HandlerProvider.compute(CachedValuesManager.java:215)ΓåÉPsiParameterizedCachedValue.doCompute(PsiParameterizedCachedVal
+ue.kt:24)ΓåÉCachedValueBase.lambda$getValueWithLock$3(CachedValueBase.java:299)ΓåÉCachedValueBase.computeData(CachedVal
+ueBase.java:37)ΓåÉCachedValueBase.lambda$getValueWithLock$4(CachedValueBase.java:299)ΓåÉRecursionManager$1.computePreve
+ntingRecursion(RecursionManager.java:113)ΓåÉRecursionGuard.doPreventingRecursion(RecursionGuard.java:28)ΓåÉRecursionMan
+ager.doPreventingRecursion(RecursionManager.java:68)ΓåÉCachedValueBase.getValueWithLock(CachedValueBase.java:300)ΓåÉPsi
+ParameterizedCachedValue.getValue(PsiParameterizedCachedValue.kt:18)ΓåÉCachedValuesManager.getParameterizedCachedValue(
+CachedValuesManager.java:97)ΓåÉCachedValuesManager.getCachedValue(CachedValuesManager.java:212)ΓåÉCachedValuesManager.g
+etCachedValue(CachedValuesManager.java:136)ΓåÉSymbolLightClassForScript.getOwnMethods(SymbolLightClassForScript.kt:227)
+ΓåÉSymbolLightClassBase.getMethods(SymbolLightClassBase.kt:52)ΓåÉKotlinScriptUClass.getMethods(KotlinScriptUClass.kt:53
+)ΓåÉAbstractKotlinUClass.getUastDeclarations(AbstractKotlinUClass.kt:36)ΓåÉAbstractKotlinUClass.accept(AbstractKotlinUC
+lass.kt:223)ΓåÉImplementationUtilsKt.acceptList(implementationUtils.kt:15)ΓåÉUFile.accept(UFile.kt:89)ΓåÉUastLintUtilsK
+t.acceptSourceFile(UastLintUtils.kt:956)ΓåÉUastGradleVisitor.visitBuildScript(UastGradleVisitor.kt:43)ΓåÉLintDriver$che
+ckBuildScripts$3.run(LintDriver.kt:1402)ΓåÉLintClient.runReadAction(LintClient.kt:1645)ΓåÉLintCliClient.runReadAction(L
+intCliClient.kt:230)ΓåÉLintDriver$LintClientWrapper.runReadAction(LintDriver.kt:2690)ΓåÉLintDriver.checkBuildScripts(Li
+ntDriver.kt:1377)ΓåÉLintDriver.runFileDetectors(LintDriver.kt:1248)ΓåÉLintDriver.checkProject(LintDriver.kt:1041)ΓåÉLin
+tDriver.checkProjectRoot(LintDriver.kt:607)ΓåÉLintDriver.access$checkProjectRoot(LintDriver.kt:179)ΓåÉLintDriver$analyz
+eOnly$1.invoke(LintDriver.kt:434)ΓåÉLintDriver$analyzeOnly$1.invoke(LintDriver.kt:431)ΓåÉLintDriver.doAnalyze(LintDrive
+r.kt:490)ΓåÉLintDriver.analyzeOnly(LintDriver.kt:431)ΓåÉLintCliClient$analyzeOnly$1.invoke(LintCliClient.kt:263)ΓåÉLint
+CliClient$analyzeOnly$1.invoke(LintCliClient.kt:260)ΓåÉLintCliClient.run(LintCliClient.kt:309)ΓåÉLintCliClient.analyzeO
+nly(LintCliClient.kt:260)ΓåÉMain.run(Main.java:1777)ΓåÉMain.run(Main.java:283)ΓåÉDirectMethodHandleAccessor.invoke(Dire
+ctMethodHandleAccessor.java:103)ΓåÉMethod.invoke(Method.java:586)ΓåÉAndroidLintWorkAction.invokeLintMainRunMethod(Andro
+idLintWorkAction.kt:103)ΓåÉAndroidLintWorkAction.runLint(AndroidLintWorkAction.kt:90)ΓåÉAndroidLintWorkAction.execute(A
+ndroidLintWorkAction.kt:64)ΓåÉDefaultWorkerServer.execute(DefaultWorkerServer.java:68)ΓåÉNoIsolationWorkerFactory$1$1.c
+reate(NoIsolationWorkerFactory.java:64)ΓåÉNoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:61)ΓåÉClass
+LoaderUtils.executeInClassloader(ClassLoaderUtils.java:102)ΓåÉNoIsolationWorkerFactory$1.lambda$execute$0(NoIsolationWo
+rkerFactory.java:61)ΓåÉAbstractWorker$1.call(AbstractWorker.java:44)ΓåÉAbstractWorker$1.call(AbstractWorker.java:41)ΓåÉ
+DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:209)ΓåÉDefaultBuildOp
+erationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)ΓåÉDefaultBuildOperationRunner$
+2.execute(DefaultBuildOperationRunner.java:66)\`
+     
+     You can run with --stacktrace or set environment variable \`LINT_PRINT_STACKTRACE=true\` to dump a full 
+stacktrace to stdout.
+     Stack: `RuntimeException:LintDriver$Companion.handleDetectorError(LintDriver.kt:3597)ΓåÉLintDriver$Companion.handl
+eDetectorError$default(LintDriver.kt:3462)ΓåÉLintDriver$Companion.handleDetectorError(LintDriver.kt:3458)ΓåÉLintDriver$
+analyzeOnly$1.invoke(LintDriver.kt:436)ΓåÉLintDriver$analyzeOnly$1.invoke(LintDriver.kt:431)ΓåÉLintDriver.doAnalyze(Lin
+tDriver.kt:490)ΓåÉLintDriver.analyzeOnly(LintDriver.kt:431)ΓåÉLintCliClient$analyzeOnly$1.invoke(LintCliClient.kt:263)Γ
+åÉLintCliClient$analyzeOnly$1.invoke(LintCliClient.kt:260)ΓåÉLintCliClient.run(LintCliClient.kt:309)ΓåÉLintCliClient.an
+alyzeOnly(LintCliClient.kt:260)ΓåÉMain.run(Main.java:1777)ΓåÉMain.run(Main.java:283)ΓåÉDirectMethodHandleAccessor.invok
+e(DirectMethodHandleAccessor.java:103)ΓåÉMethod.invoke(Method.java:586)ΓåÉAndroidLintWorkAction.invokeLintMainRunMethod
+(AndroidLintWorkAction.kt:103)ΓåÉAndroidLintWorkAction.runLint(AndroidLintWorkAction.kt:90)ΓåÉAndroidLintWorkAction.exe
+cute(AndroidLintWorkAction.kt:64)ΓåÉDefaultWorkerServer.execute(DefaultWorkerServer.java:68)ΓåÉNoIsolationWorkerFactory
+$1$1.create(NoIsolationWorkerFactory.java:64)ΓåÉNoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:61)Γå
+ÉClassLoaderUtils.executeInClassloader(ClassLoaderUtils.java:102)ΓåÉNoIsolationWorkerFactory$1.lambda$execute$0(NoIsola
+tionWorkerFactory.java:61)ΓåÉAbstractWorker$1.call(AbstractWorker.java:44)ΓåÉAbstractWorker$1.call(AbstractWorker.java:
+41)ΓåÉDefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:209)ΓåÉDefaultB
+uildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)ΓåÉDefaultBuildOperationR
+unner$2.execute(DefaultBuildOperationRunner.java:66)ΓåÉDefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunne
+r.java:59)ΓåÉDefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:166)ΓåÉDefaultBuildOperationRunner.ex
+ecute(DefaultBuildOperationRunner.java:59)ΓåÉDefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)ΓåÉAb
+stractWorker.executeWrappedInBuildOperation(AbstractWorker.java:41)ΓåÉNoIsolationWorkerFactory$1.execute(NoIsolationWor
+kerFactory.java:58)ΓåÉDefaultWorkerExecutor.lambda$submitWork$0(DefaultWorkerExecutor.java:176)ΓåÉFutureTask.run(Future
+Task.java:317)ΓåÉDefaultConditionalExecutionQueue$ExecutionRunner.runExecution(DefaultConditionalExecutionQueue.java:19
+4)ΓåÉDefaultConditionalExecutionQueue$ExecutionRunner.access$700(DefaultConditionalExecutionQueue.java:127)ΓåÉDefaultCo
+nditionalExecutionQueue$ExecutionRunner$1.run(DefaultConditionalExecutionQueue.java:169)ΓåÉFactories$1.create(Factories
+.java:30)ΓåÉDefaultWorkerLeaseService.lambda$withLocksAcquired$0(DefaultWorkerLeaseService.java:269)ΓåÉResourceLockStat
+istics$1.measure(ResourceLockStatistics.java:42)ΓåÉDefaultWorkerLeaseService.withLocksAcquired(DefaultWorkerLeaseServic
+e.java:267)ΓåÉDefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:259)ΓåÉDefaultWorkerLeaseService.runAs
+WorkerThread(DefaultWorkerLeaseService.java:127)ΓåÉDefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseServic
+e.java:132)ΓåÉDefaultConditionalExecutionQueue$ExecutionRunner.runBatch(DefaultConditionalExecutionQueue.java:164)ΓåÉDe
+faultConditionalExecutionQueue$ExecutionRunner.run(DefaultConditionalExecutionQueue.java:133)ΓåÉExecutors$RunnableAdapt
+er.call(Executors.java:572)ΓåÉFutureTask.run(FutureTask.java:317)ΓåÉExecutorPolicy$CatchAndRecordFailures.onExecute(Exe
+cutorPolicy.java:64)ΓåÉAbstractManagedExecutor$1.run(AbstractManagedExecutor.java:47)ΓåÉThreadPoolExecutor.runWorker(Th
+readPoolExecutor.java:1144)ΓåÉThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)ΓåÉThread.run(Thread.java:1595)
+`
+     
+     You can run with --stacktrace or set environment variable `LINT_PRINT_STACKTRACE=true` to dump a full stacktrace 
+to stdout.
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 5m 59s
+28 actionable tasks: 3 executed, 25 up-to-date

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="space_xs">4dp</dimen>
+    <dimen name="space_sm">8dp</dimen>
+    <dimen name="space_md">16dp</dimen>
+    <dimen name="space_lg">24dp</dimen>
+    <dimen name="space_xl">32dp</dimen>
+    <dimen name="text_xs">12sp</dimen>
+    <dimen name="text_sm">14sp</dimen>
+    <dimen name="text_md">16sp</dimen>
+    <dimen name="text_lg">18sp</dimen>
+    <dimen name="text_xl">22sp</dimen>
+    <dimen name="text_xxl">28sp</dimen>
+
+    <dimen name="dash_avatar_size">44dp</dimen>
+    <dimen name="dash_icon_circle_size">44dp</dimen>
+    <dimen name="dash_icon_size">22dp</dimen>
+    <dimen name="dash_tile_min_height">96dp</dimen>
+    <dimen name="dash_tile_padding">14dp</dimen>
+    <dimen name="dash_tile_corner">16dp</dimen>
+    <dimen name="dash_header_icon_button">44dp</dimen>
+
+    <dimen name="product_thumb">64dp</dimen>
+    <dimen name="product_hero_height">240dp</dimen>
+    <dimen name="product_pill_height">24dp</dimen>
+    <dimen name="product_chip_height">32dp</dimen>
+    <dimen name="status_pill_padding_h">10dp</dimen>
+    <dimen name="status_pill_padding_v">4dp</dimen>
+</resources>

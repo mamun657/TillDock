@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TillDock</string>
+
+    <string name="home_tagline">Modern point-of-sale for ambitious merchants.</string>
+    <string name="home_description">TillDock helps merchants run their counter operations with clarity. Sign up to access your merchant dashboard.</string>
+    <string name="home_feature_inventory_title">Inventory at a glance</string>
+    <string name="home_feature_inventory_body">Keep stock organised across every counter and store location.</string>
+    <string name="home_feature_sales_title">Sales you can trust</string>
+    <string name="home_feature_sales_body">Track every transaction with consistent, auditable records.</string>
+    <string name="home_feature_business_title">Built for businesses</string>
+    <string name="home_feature_business_body">Designed for the way real merchants work each day.</string>
+    <string name="home_get_started">Get started</string>
+    <string name="home_login">Sign in</string>
+
+    <string name="signup_title">Create your merchant account</string>
+    <string name="signup_subtitle">Set up your TillDock workspace in a few steps.</string>
+    <string name="signup_full_name">Full name</string>
+    <string name="signup_business_name">Business name</string>
+    <string name="signup_email">Email address</string>
+    <string name="signup_phone">Phone number</string>
+    <string name="signup_password">Password</string>
+    <string name="signup_confirm_password">Confirm password</string>
+    <string name="signup_submit">Create account</string>
+    <string name="signup_have_account">Already have an account? Sign in</string>
+    <string name="password_toggle_show">Show password</string>
+    <string name="password_toggle_hide">Hide password</string>
+
+    <string name="login_title">Welcome back</string>
+    <string name="login_subtitle">Sign in to continue to your merchant dashboard.</string>
+    <string name="login_email">Email address</string>
+    <string name="login_password">Password</string>
+    <string name="login_submit">Sign in</string>
+    <string name="login_no_account">New to TillDock? Create an account</string>
+
+    <string name="dashboard_greeting">Hello, %1$s</string>
+    <string name="dashboard_business">%1$s</string>
+    <string name="dashboard_welcome">Welcome back, %1$s</string>
+    <string name="dashboard_business_name">%1$s</string>
+    <string name="dashboard_section_quick_actions">Quick actions</string>
+    <string name="dashboard_section_account">Account</string>
+    <string name="dashboard_action_business">Business</string>
+    <string name="dashboard_action_categories">Categories</string>
+    <string name="dashboard_action_products">Products</string>
+    <string name="dashboard_action_inventory">Inventory</string>
+    <string name="dashboard_action_settings">Settings</string>
+    <string name="dashboard_label_name">Name</string>
+    <string name="dashboard_label_business">Business</string>
+    <string name="dashboard_label_email">Email</string>
+    <string name="dashboard_label_phone">Phone</string>
+    <string name="dashboard_label_role">Role</string>
+    <string name="dashboard_label_status">Account status</string>
+    <string name="dashboard_logout">Sign out</string>
+    <string name="dashboard_logout_confirm">Sign out of TillDock?</string>
+    <string name="dashboard_empty_title">Ready when you are</string>
+    <string name="dashboard_empty_body">More merchant capabilities will appear here as TillDock evolves.</string>
+
+    <string name="dashboard_section_workspace">Workspace</string>
+    <string name="dashboard_card_business_title">Business profile</string>
+    <string name="dashboard_card_business_body">Configure your shop name, contact details, currency and tax.</string>
+    <string name="dashboard_card_business_action">Manage business</string>
+    <string name="dashboard_card_categories_title">Categories</string>
+    <string name="dashboard_card_categories_body">Organise products into logical groups for faster checkout.</string>
+    <string name="dashboard_card_categories_action">Manage categories</string>
+    <string name="dashboard_card_products_title">Products</string>
+    <string name="dashboard_card_products_body">Maintain your catalog with prices, stock and SKUs.</string>
+    <string name="dashboard_card_products_action">Manage products</string>
+
+    <string name="common_save">Save</string>
+    <string name="common_cancel">Cancel</string>
+    <string name="common_delete">Delete</string>
+    <string name="common_edit">Edit</string>
+    <string name="common_add">Add</string>
+    <string name="common_back">Back</string>
+    <string name="common_loading">Loading…</string>
+    <string name="common_empty">Nothing here yet</string>
+    <string name="common_retry">Retry</string>
+
+    <string name="business_title">Business profile</string>
+    <string name="business_subtitle">Manage how your shop appears across TillDock.</string>
+    <string name="business_label_name">Business name</string>
+    <string name="business_label_address">Address</string>
+    <string name="business_label_phone">Phone</string>
+    <string name="business_label_email">Email</string>
+    <string name="business_label_logo">Logo URL</string>
+    <string name="business_label_currency">Currency</string>
+    <string name="business_label_tax">Tax rate (%)</string>
+    <string name="business_action_edit">Edit business</string>
+    <string name="business_action_save">Save business</string>
+    <string name="business_action_delete">Delete business</string>
+    <string name="business_empty_title">No business yet</string>
+    <string name="business_empty_body">Set up your shop so customers and TillDock know how to reach you.</string>
+    <string name="business_empty_action">Create business</string>
+    <string name="business_saved">Business saved</string>
+    <string name="business_deleted">Business removed</string>
+    <string name="business_currency_hint">3-letter code, e.g. BDT</string>
+    <string name="business_tax_hint">0 to 100</string>
+
+    <string name="categories_title">Categories</string>
+    <string name="categories_subtitle">Group your products so staff can find them quickly.</string>
+    <string name="categories_empty_title">No categories yet</string>
+    <string name="categories_empty_body">Add categories like Beverages, Snacks, or Household to get started.</string>
+    <string name="categories_add">Add category</string>
+    <string name="categories_dialog_create_title">New category</string>
+    <string name="categories_dialog_edit_title">Edit category</string>
+    <string name="categories_label_name">Name</string>
+    <string name="categories_label_description">Description</string>
+    <string name="categories_saved">Category saved</string>
+    <string name="categories_deleted">Category removed</string>
+    <string name="categories_delete_confirm_title">Delete category?</string>
+    <string name="categories_delete_confirm_message">Products in this category will block deletion.</string>
+
+    <string name="products_title">Products</string>
+    <string name="products_subtitle">Maintain your catalog with prices, SKUs and stock levels.</string>
+    <string name="products_empty_title">No products yet</string>
+    <string name="products_empty_body">Add products to start building your catalog.</string>
+    <string name="products_add">Add product</string>
+    <string name="products_dialog_create_title">New product</string>
+    <string name="products_dialog_edit_title">Edit product</string>
+    <string name="products_label_name">Name</string>
+    <string name="products_label_sku">SKU</string>
+    <string name="products_label_category">Category</string>
+    <string name="products_label_description">Description</string>
+    <string name="products_label_purchase_price">Purchase price</string>
+    <string name="products_label_selling_price">Selling price</string>
+    <string name="products_label_stock">Stock</string>
+    <string name="products_saved">Product saved</string>
+    <string name="products_deleted">Product removed</string>
+    <string name="products_price_hint">0.00</string>
+    <string name="products_sku_hint">e.g. BEV-ESP-001</string>
+    <string name="products_stock_hint">0</string>
+    <string name="products_category_required">Please create a category first.</string>
+    <string name="products_select_category">Select category</string>
+
+    <string name="error_full_name_required">Please enter your full name.</string>
+    <string name="error_full_name_length">Name should be between 2 and 120 characters.</string>
+    <string name="error_business_name_required">Please enter your business name.</string>
+    <string name="error_business_name_length">Business name should be between 2 and 160 characters.</string>
+    <string name="error_email_required">Please enter your email address.</string>
+    <string name="error_email_invalid">Please enter a valid email address.</string>
+    <string name="error_phone_required">Please enter your phone number.</string>
+    <string name="error_phone_invalid">Please enter a valid phone number.</string>
+    <string name="error_password_required">Please choose a password.</string>
+    <string name="error_password_weak">Password must be 8+ chars with upper, lower, number and symbol.</string>
+    <string name="error_confirm_password_required">Please confirm your password.</string>
+    <string name="error_passwords_mismatch">Passwords do not match.</string>
+    <string name="error_email_already_registered">This email is already registered.</string>
+    <string name="error_invalid_credentials">Invalid email or password.</string>
+    <string name="error_account_inactive">Your account is not active. Please contact support.</string>
+    <string name="error_network_unavailable">Unable to connect to the server. Check your connection and try again.</string>
+    <string name="error_server_unavailable">The service is temporarily unavailable. Please try again.</string>
+    <string name="error_unknown">Something went wrong. Please try again.</string>
+    <string name="error_session_expired">Your session expired. Please sign in again.</string>
+    <string name="error_business_address_required">Please enter an address.</string>
+    <string name="error_business_currency_required">Please enter a 3-letter currency code.</string>
+    <string name="error_business_currency_invalid">Currency must be 3 uppercase letters.</string>
+    <string name="error_business_tax_invalid">Tax rate must be between 0 and 100.</string>
+    <string name="error_category_name_required">Please enter a category name.</string>
+    <string name="error_category_name_length">Category name should be between 2 and 120 characters.</string>
+    <string name="error_category_description_length">Description is too long.</string>
+    <string name="error_product_name_required">Please enter a product name.</string>
+    <string name="error_product_sku_required">Please enter a SKU.</string>
+    <string name="error_product_sku_invalid">SKU must be 2–64 chars of letters, numbers, dash or underscore.</string>
+    <string name="error_product_category_required">Please select a category.</string>
+    <string name="error_product_price_invalid">Please enter a valid price.</string>
+    <string name="error_product_price_negative">Price cannot be negative.</string>
+    <string name="error_product_stock_invalid">Stock must be 0 or higher.</string>
+
+    <string name="dialog_discard_title">Discard changes?</string>
+    <string name="dialog_discard_message">You have unsaved changes. Leave this screen anyway?</string>
+    <string name="dialog_yes">Yes</string>
+    <string name="dialog_no">No</string>
+
+    <string name="dashboard_card_inventory_title">Inventory</string>
+    <string name="dashboard_card_inventory_body">View live stock counts and adjust thresholds.</string>
+    <string name="dashboard_card_inventory_action">Manage inventory</string>
+
+    <string name="inventory_title">Inventory</string>
+    <string name="inventory_subtitle">Live stock levels and thresholds across your catalog.</string>
+    <string name="inventory_empty_title">No inventory yet</string>
+    <string name="inventory_empty_body">Add products to start tracking stock levels.</string>
+    <string name="inventory_action_manage">Manage</string>
+    <string name="inventory_action_stock_in">Stock in</string>
+    <string name="inventory_action_stock_out">Stock out</string>
+    <string name="inventory_action_adjust">Adjust</string>
+    <string name="inventory_action_threshold">Threshold</string>
+    <string name="inventory_action_movements">Movements</string>
+    <string name="inventory_dialog_stock_in_title">Add stock</string>
+    <string name="inventory_dialog_stock_out_title">Remove stock</string>
+    <string name="inventory_dialog_adjust_title">Adjust stock</string>
+    <string name="inventory_dialog_threshold_title">Update threshold</string>
+    <string name="inventory_label_quantity">Quantity</string>
+    <string name="inventory_label_new_quantity">New quantity</string>
+    <string name="inventory_label_reason">Reason</string>
+    <string name="inventory_label_threshold">Threshold</string>
+    <string name="inventory_stock_value">Stock: %1$d</string>
+    <string name="inventory_threshold_value">Threshold: %1$d</string>
+    <string name="inventory_status_value">Status: %1$s</string>
+    <string name="inventory_status_out">Out</string>
+    <string name="inventory_status_low">Low</string>
+    <string name="inventory_status_in">In stock</string>
+    <string name="inventory_movements_title">Stock movements</string>
+    <string name="inventory_movements_empty">No movements recorded for this product yet.</string>
+    <string name="inventory_movement_quantities">%1$d → %2$d</string>
+    <string name="inventory_movement_adjust">Adjustment</string>
+    <string name="inventory_movement_initial">Initial</string>
+    <string name="inventory_movement_in">Stock in</string>
+    <string name="inventory_movement_out">Stock out</string>
+    <string name="inventory_save_error">Could not update stock. Please try again.</string>
+    <string name="inventory_loaded">Inventory updated</string>
+
+    <string name="product_detail_title">Product details</string>
+    <string name="product_form_title">Product</string>
+    <string name="business_setup_title">Set up your business</string>
+
+    <string name="products_search_hint">Search by name or SKU</string>
+    <string name="products_filter_all">All</string>
+    <string name="products_filter_in_stock">In stock</string>
+    <string name="products_filter_low">Low</string>
+    <string name="products_filter_out">Out</string>
+    <string name="products_sort_label">Sort</string>
+    <string name="products_sort_name">Name (A–Z)</string>
+    <string name="products_sort_recent">Most recent</string>
+    <string name="products_sort_stock">Stock level</string>
+    <string name="products_show_archived">Show archived</string>
+    <string name="products_hide_archived">Hide archived</string>
+
+    <string name="product_overflow_edit">Edit</string>
+    <string name="product_overflow_inventory">Inventory</string>
+    <string name="product_overflow_archive">Archive</string>
+    <string name="product_overflow_restore">Restore</string>
+    <string name="product_overflow_delete_image">Remove image</string>
+    <string name="product_overflow_change_image">Change image</string>
+
+    <string name="product_status_in_stock">In stock</string>
+    <string name="product_status_low">Low</string>
+    <string name="product_status_out">Out</string>
+    <string name="product_status_archived">Archived</string>
+
+    <string name="product_label_low_stock_threshold">Low-stock alert at</string>
+    <string name="product_label_stock_value">Current stock</string>
+    <string name="product_label_image">Image</string>
+    <string name="product_label_prices">Pricing</string>
+    <string name="product_label_purchase">Purchase price</string>
+    <string name="product_label_selling">Selling price</string>
+    <string name="product_label_margin">Margin</string>
+    <string name="product_label_category_name">Category</string>
+    <string name="product_label_sku_short">SKU</string>
+    <string name="product_label_stock_short">Stock</string>
+
+    <string name="product_image_pick_camera">Take photo</string>
+    <string name="product_image_pick_gallery">Choose from gallery</string>
+    <string name="product_image_remove">Remove image</string>
+    <string name="product_image_required">Image could not be loaded</string>
+
+    <string name="product_action_add_to_sale">Add to sale</string>
+    <string name="product_action_add_to_sale_subtitle">Available with the TillDock POS</string>
+
+    <string name="product_archive_confirm_title">Archive product?</string>
+    <string name="product_archive_confirm_message">Archived products stay in your records and can be restored later.</string>
+    <string name="product_restore_confirm_title">Restore product?</string>
+    <string name="product_restore_confirm_message">This product will appear in your active catalog again.</string>
+    <string name="product_archived">Product archived</string>
+    <string name="product_restored">Product restored</string>
+    <string name="product_image_uploaded">Image uploaded</string>
+    <string name="product_image_removed">Image removed</string>
+
+    <string name="business_setup_required_title">Business profile required</string>
+    <string name="business_setup_required_message">Please complete your business profile before continuing.</string>
+    <string name="business_setup_required_action">Set up business</string>
+
+    <string name="error_product_threshold_invalid">Threshold must be 0 or higher.</string>
+    <string name="error_product_image_too_large">Image is too large. Please choose a smaller image.</string>
+    <string name="error_product_image_invalid">Image format is not supported.</string>
+
+    <string name="title_products">Products</string>
+    <string name="products_add_short">Add</string>
+    <string name="products_empty">No products match your filters yet.</string>
+    <string name="products_label_stock_value_format">Stock: %1$d</string>
+    <string name="stock_mutation_subtitle_format">%1$s · current stock %2$d</string>
+    <string name="stock_mutation_subtitle_missing">Product not in active list.</string>
+
+    <string name="business_setup_subtitle">Tell customers what to call your business and which currency you use.</string>
+    <string name="business_setup_label_name">Business name</string>
+    <string name="business_setup_label_currency">Currency (3 letters)</string>
+    <string name="business_setup_name_required">Please enter a business name.</string>
+    <string name="business_setup_currency_invalid">Currency must be a 3-letter code (e.g. USD).</string>
+    <string name="business_setup_saved">Business profile saved.</string>
+    <string name="business_setup_required_toast">Set up your business to continue.</string>
+
+    <string name="product_image_load_failed">Could not load this image.</string>
+    <string name="product_image_remove_confirm">The current product image will be removed.</string>
+    <string name="product_image_camera_title">Camera access</string>
+    <string name="product_image_camera_rationale">Allow camera access to capture product photos.</string>
+    <string name="product_image_camera_denied">Camera permission denied.</string>
+    <string name="common_continue_text">Continue</string>
+
+    <string name="common_discard">Discard</string>
+    <string name="common_discard_changes_title">Discard changes?</string>
+    <string name="common_discard_changes_message">Your edits will be lost.</string>
+    <string name="error_form_fix_fields">Please fix the highlighted fields.</string>
+    <string name="products_label_description_empty">No description available.</string>
+    <string name="products_edit">Edit product</string>
+    <string name="products_add_product">Add product</string>
+    <string name="error_product_purchase_invalid">Purchase price must be 0 or higher.</string>
+    <string name="error_product_selling_invalid">Selling price must be 0 or higher.</string>
+</resources>

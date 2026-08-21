@@ -1,0 +1,5 @@
+ep-morning-dew-azzwjs2o-pooler.c-3.ap-southeast-1.aws.neon.tech
+5432
+neondb
+neondb_owner
+npg_O2sxWUqa3rBV

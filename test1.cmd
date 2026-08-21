@@ -1,0 +1,2 @@
+@echo off
+curl.exe -sS -X POST "http://localhost:8080/api/auth/login" -H "Content-Type: application/json" --data-binary "@C:\TillDock\req1.json" -o "C:\TillDock\resp1.json" -w "HTTP_STATUS:%%{http_code}"
