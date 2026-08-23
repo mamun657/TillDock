@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingVertical="@dimen/space_sm">
+
+    <TextView
+        android:id="@+id/top_product_rank"
+        android:layout_width="24dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/text_muted"
+        android:textSize="@dimen/text_xs" />
+
+    <TextView
+        android:id="@+id/top_product_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/text_strong"
+        android:textSize="@dimen/text_sm" />
+
+    <TextView
+        android:id="@+id/top_product_units"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_muted"
+        android:textSize="@dimen/text_xs" />
+
+    <TextView
+        android:id="@+id/top_product_revenue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_md"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/text_strong"
+        android:textSize="@dimen/text_sm" />
+
+</LinearLayout>

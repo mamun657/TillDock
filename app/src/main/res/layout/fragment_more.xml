@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/surface_muted">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/more_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/surface_default"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="@string/more_title"
+        app:titleTextColor="@color/text_strong" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@id/more_toolbar"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/space_base">
+
+            <LinearLayout
+                android:id="@+id/more_grid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:baselineAligned="false"
+                    android:layout_marginBottom="@dimen/space_base">
+
+                    <LinearLayout
+                        android:id="@+id/more_tile_profile"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="@dimen/space_small"
+                        android:orientation="vertical"
+                        android:padding="@dimen/space_base"
+                        android:background="@color/surface_default" />
+
+                    <LinearLayout
+                        android:id="@+id/more_tile_business"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="@dimen/space_small"
+                        android:orientation="vertical"
+                        android:padding="@dimen/space_base"
+                        android:background="@color/surface_default" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:baselineAligned="false"
+                    android:layout_marginBottom="@dimen/space_base">
+
+                    <LinearLayout
+                        android:id="@+id/more_tile_staff"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="@dimen/space_small"
+                        android:orientation="vertical"
+                        android:padding="@dimen/space_base"
+                        android:background="@color/surface_default" />
+
+                    <LinearLayout
+                        android:id="@+id/more_tile_reports"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="@dimen/space_small"
+                        android:orientation="vertical"
+                        android:padding="@dimen/space_base"
+                        android:background="@color/surface_default" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:baselineAligned="false">
+
+                    <LinearLayout
+                        android:id="@+id/more_tile_settings"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="@dimen/space_small"
+                        android:orientation="vertical"
+                        android:padding="@dimen/space_base"
+                        android:background="@color/surface_default" />
+
+                    <LinearLayout
+                        android:id="@+id/more_tile_help"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="@dimen/space_small"
+                        android:orientation="vertical"
+                        android:padding="@dimen/space_base"
+                        android:background="@color/surface_default" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/more_logout"
+                style="@style/Widget.Material3.Button.TonalButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_xl"
+                android:text="@string/more_logout" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

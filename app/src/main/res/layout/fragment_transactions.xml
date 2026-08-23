@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/surface_muted">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/txn_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/surface_default"
+        android:elevation="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="@string/transactions_title"
+        app:titleTextColor="@color/text_strong" />
+
+    <TextView
+        android:id="@+id/txn_subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/space_base"
+        android:paddingBottom="@dimen/space_sm"
+        android:text="@string/transactions_subtitle"
+        android:textColor="@color/text_muted"
+        android:textSize="@dimen/text_xs"
+        app:layout_constraintTop_toBottomOf="@id/txn_toolbar" />
+
+    <HorizontalScrollView
+        android:id="@+id/txn_filter_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:paddingHorizontal="@dimen/space_base"
+        app:layout_constraintTop_toBottomOf="@id/txn_subtitle">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/txn_filter_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:singleSelection="true"
+            app:selectionRequired="true"
+            app:chipSpacingHorizontal="@dimen/space_sm">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/txn_filter_all"
+                style="@style/Widget.Material3.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:checked="true"
+                android:text="@string/transactions_filter_all" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/txn_filter_today"
+                style="@style/Widget.Material3.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:text="@string/transactions_filter_today" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/txn_filter_week"
+                style="@style/Widget.Material3.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:text="@string/transactions_filter_week" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/txn_filter_month"
+                style="@style/Widget.Material3.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:text="@string/transactions_filter_month" />
+
+        </com.google.android.material.chip.ChipGroup>
+
+    </HorizontalScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/txn_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="@dimen/space_base"
+        android:clipToPadding="false"
+        app:layout_constraintTop_toBottomOf="@id/txn_filter_scroll"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/txn_empty"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/space_xl"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/txn_filter_scroll"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/transactions_empty_title"
+            android:textColor="@color/text_strong"
+            android:textSize="@dimen/text_md"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_xs"
+            android:text="@string/transactions_empty_body"
+            android:textColor="@color/text_muted"
+            android:textSize="@dimen/text_sm"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/txn_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/txn_filter_scroll"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
