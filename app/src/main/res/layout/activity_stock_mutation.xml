@@ -42,7 +42,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/stock_mutation_button_stock_in"
-        style="@style/TillDockPrimaryButton"
+        style="@style/TillDock.PrimaryButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -50,7 +50,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/stock_mutation_button_stock_out"
-        style="@style/TillDockPrimaryButton"
+        style="@style/TillDock.PrimaryButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -58,7 +58,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/stock_mutation_button_adjust"
-        style="@style/TillDockSecondaryButton"
+        style="@style/TillDock.SecondaryButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -66,7 +66,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/stock_mutation_button_threshold"
-        style="@style/TillDockSecondaryButton"
+        style="@style/TillDock.SecondaryButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"

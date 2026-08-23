@@ -72,7 +72,7 @@
     <string name="common_edit">Edit</string>
     <string name="common_add">Add</string>
     <string name="common_back">Back</string>
-    <string name="common_loading">Loading…</string>
+    <string name="common_loading">Loadingâ€¦</string>
     <string name="common_empty">Nothing here yet</string>
     <string name="common_retry">Retry</string>
 
@@ -160,7 +160,7 @@
     <string name="error_category_description_length">Description is too long.</string>
     <string name="error_product_name_required">Please enter a product name.</string>
     <string name="error_product_sku_required">Please enter a SKU.</string>
-    <string name="error_product_sku_invalid">SKU must be 2–64 chars of letters, numbers, dash or underscore.</string>
+    <string name="error_product_sku_invalid">SKU must be 2â€“64 chars of letters, numbers, dash or underscore.</string>
     <string name="error_product_category_required">Please select a category.</string>
     <string name="error_product_price_invalid">Please enter a valid price.</string>
     <string name="error_product_price_negative">Price cannot be negative.</string>
@@ -190,6 +190,7 @@
     <string name="inventory_dialog_adjust_title">Adjust stock</string>
     <string name="inventory_dialog_threshold_title">Update threshold</string>
     <string name="inventory_label_quantity">Quantity</string>
+    <string name="inventory_label_stock">Stock</string>
     <string name="inventory_label_new_quantity">New quantity</string>
     <string name="inventory_label_reason">Reason</string>
     <string name="inventory_label_threshold">Threshold</string>
@@ -201,7 +202,7 @@
     <string name="inventory_status_in">In stock</string>
     <string name="inventory_movements_title">Stock movements</string>
     <string name="inventory_movements_empty">No movements recorded for this product yet.</string>
-    <string name="inventory_movement_quantities">%1$d → %2$d</string>
+    <string name="inventory_movement_quantities">%1$d â†’ %2$d</string>
     <string name="inventory_movement_adjust">Adjustment</string>
     <string name="inventory_movement_initial">Initial</string>
     <string name="inventory_movement_in">Stock in</string>
@@ -219,7 +220,7 @@
     <string name="products_filter_low">Low</string>
     <string name="products_filter_out">Out</string>
     <string name="products_sort_label">Sort</string>
-    <string name="products_sort_name">Name (A–Z)</string>
+    <string name="products_sort_name">Name (Aâ€“Z)</string>
     <string name="products_sort_recent">Most recent</string>
     <string name="products_sort_stock">Stock level</string>
     <string name="products_show_archived">Show archived</string>
@@ -277,7 +278,7 @@
     <string name="products_add_short">Add</string>
     <string name="products_empty">No products match your filters yet.</string>
     <string name="products_label_stock_value_format">Stock: %1$d</string>
-    <string name="stock_mutation_subtitle_format">%1$s · current stock %2$d</string>
+    <string name="stock_mutation_subtitle_format">%1$s Â· current stock %2$d</string>
     <string name="stock_mutation_subtitle_missing">Product not in active list.</string>
 
     <string name="business_setup_subtitle">Tell customers what to call your business and which currency you use.</string>
@@ -304,4 +305,213 @@
     <string name="products_add_product">Add product</string>
     <string name="error_product_purchase_invalid">Purchase price must be 0 or higher.</string>
     <string name="error_product_selling_invalid">Selling price must be 0 or higher.</string>
+
+    <string name="nav_home">Home</string>
+    <string name="nav_products">Products</string>
+    <string name="nav_sales">Sales</string>
+    <string name="nav_reports">Reports</string>
+    <string name="nav_more">More</string>
+
+    <string name="cart_title">New sale</string>
+    <string name="cart_subtitle">Build the order, then send to payment.</string>
+    <string name="cart_section_cart">Cart</string>
+    <string name="cart_section_products">Available products</string>
+    <string name="cart_customer_label">Customer name</string>
+    <string name="cart_discount_label">Discount</string>
+    <string name="cart_subtotal_label">Subtotal</string>
+    <string name="cart_tax_label">Tax</string>
+    <string name="cart_total_label">Total</string>
+    <string name="cart_items_label">Items</string>
+    <string name="cart_in_stock_format">In stock: %1$d</string>
+    <string name="cart_item_count_format">%1$d item(s)</string>
+    <string name="cart_clear">Clear</string>
+    <string name="cart_checkout_format">Charge %1$s</string>
+    <string name="cart_empty_warning">Add at least one product to checkout.</string>
+    <string name="cart_empty_text">Cart is empty. Tap a product to add it.</string>
+    <string name="cart_no_products">No products in stock yet.</string>
+    <string name="cart_picker_empty">No matching products.</string>
+    <string name="cart_remove">Remove</string>
+    <string name="cart_increment">Increase quantity</string>
+    <string name="cart_decrement">Decrease quantity</string>
+    <string name="cart_add">Add to cart</string>
+
+    <string name="picker_title">Pick a product</string>
+    <string name="picker_search_hint">Search by name or SKU</string>
+
+    <string name="payment_title">Payment</string>
+    <string name="payment_subtitle">Select how the customer is paying.</string>
+    <string name="payment_total_label">Total</string>
+    <string name="payment_method_section">Payment method</string>
+    <string name="payment_cash_label">Cash tendered</string>
+    <string name="payment_section_method">Payment method</string>
+    <string name="payment_section_cash">Cash tendered</string>
+    <string name="payment_cash_hint">Amount received from customer</string>
+    <string name="payment_change_label">Change due</string>
+    <string name="payment_change_zero">No change</string>
+    <string name="payment_complete">Complete sale</string>
+    <string name="payment_short_cash">Cash</string>
+    <string name="payment_method_cash">Cash</string>
+    <string name="payment_method_card">Card</string>
+    <string name="payment_method_qr">QR Code</string>
+    <string name="payment_method_wallet">Mobile Wallet</string>
+    <string name="payment_method_bank">Bank Transfer</string>
+    <string name="payment_method_other">Other</string>
+    <string name="payment_error_short_cash">Cash received is less than the total.</string>
+    <string name="payment_error_invalid_amount">Please enter a valid cash amount.</string>
+
+    <string name="success_title">Sale completed</string>
+    <string name="success_subtitle">The transaction has been recorded.</string>
+    <string name="success_total">Total</string>
+    <string name="success_method">Paid by</string>
+    <string name="success_change">Change</string>
+    <string name="success_customer">Customer</string>
+    <string name="success_txn">Transaction</string>
+    <string name="success_new_sale">Start new sale</string>
+    <string name="success_view_receipt">View receipt</string>
+
+    <string name="transactions_title">Transactions</string>
+    <string name="transactions_subtitle">Every sale recorded by your business.</string>
+    <string name="transactions_empty_title">No transactions yet</string>
+    <string name="transactions_empty_body">Completed sales will appear here automatically.</string>
+    <string name="transactions_filter_all">All</string>
+    <string name="transactions_filter_today">Today</string>
+    <string name="transactions_filter_week">This week</string>
+    <string name="transactions_filter_month">This month</string>
+    <string name="transactions_load_more">Load more</string>
+
+    <string name="transaction_item_method_format">%1$s Â· %2$s</string>
+    <string name="transaction_item_customer_walk_in">Walk-in customer</string>
+
+    <string name="txn_detail_title">Receipt</string>
+    <string name="txn_detail_section_items">Items</string>
+    <string name="txn_detail_section_summary">Summary</string>
+    <string name="txn_detail_section_payment">Payment</string>
+    <string name="txn_detail_subtotal">Subtotal</string>
+    <string name="txn_detail_discount">Discount</string>
+    <string name="txn_detail_tax">Tax</string>
+    <string name="txn_detail_total">Total</string>
+    <string name="txn_detail_cash_received">Cash received</string>
+    <string name="txn_detail_change">Change</string>
+    <string name="txn_detail_status">Status</string>
+    <string name="txn_detail_loading">Loading receiptâ€¦</string>
+    <string name="txn_detail_error">Could not load this transaction.</string>
+
+    <string name="reports_title">Reports</string>
+    <string name="reports_subtitle">Understand your sales at a glance.</string>
+    <string name="reports_period_today">Today</string>
+    <string name="reports_period_day">Today</string>
+    <string name="reports_period_week">This week</string>
+    <string name="reports_period_month">This month</string>
+    <string name="reports_kpi_total_sales">Total sales</string>
+    <string name="reports_kpi_sales">Total sales</string>
+    <string name="reports_kpi_orders">Orders</string>
+    <string name="reports_kpi_count">Orders</string>
+    <string name="reports_kpi_items">Items sold</string>
+    <string name="reports_kpi_avg_ticket">Avg ticket</string>
+    <string name="reports_kpi_avg">Avg ticket</string>
+    <string name="reports_kpi_tax">Tax collected</string>
+    <string name="reports_top_products">Top products</string>
+    <string name="reports_no_sales">No sales in this period yet.</string>
+    <string name="reports_top_product_units">%1$d sold</string>
+    <string name="reports_top_product_revenue_format">%1$s Â· %2$d sold</string>
+
+    <string name="more_title">More</string>
+    <string name="more_subtitle">Tools, account and shortcuts.</string>
+    <string name="more_logout">Sign out</string>
+    <string name="more_section_sales">Sales</string>
+    <string name="more_section_team">Team</string>
+    <string name="more_section_settings">Settings</string>
+    <string name="more_tile_transactions">Transactions</string>
+    <string name="more_tile_reports">Reports</string>
+    <string name="more_tile_staff">Staff &amp; roles</string>
+    <string name="more_tile_settings">Settings</string>
+    <string name="more_tile_business">Business profile</string>
+    <string name="more_tile_profile">Your profile</string>
+    <string name="more_tile_profile_sub">Manage your account and security.</string>
+    <string name="more_tile_business_sub">Shop details, currency and tax.</string>
+    <string name="more_tile_staff_sub">Roles and team permissions.</string>
+    <string name="more_tile_reports_sub">Sales performance and trends.</string>
+    <string name="more_tile_settings_sub">Personalise TillDock for your counter.</string>
+    <string name="more_tile_help">Help &amp; support</string>
+    <string name="more_tile_help_sub">Guides, shortcuts and contact options.</string>
+    <string name="more_tile_signout">Sign out</string>
+
+    <string name="staff_title">Staff &amp; roles</string>
+    <string name="staff_roles_title">Staff &amp; roles</string>
+    <string name="staff_roles_subtitle">Standard roles your team can use.</string>
+    <string name="staff_subtitle">Standard roles your team can use.</string>
+    <string name="staff_role_owner_title">Owner</string>
+    <string name="staff_role_owner_body">Full access including business profile and billing.</string>
+    <string name="staff_role_manager_title">Manager</string>
+    <string name="staff_role_manager_body">Manage products, inventory and view reports.</string>
+    <string name="staff_role_cashier_title">Cashier</string>
+    <string name="staff_role_cashier_body">Create sales, view products and transactions.</string>
+
+    <string name="settings_title">Settings</string>
+    <string name="settings_receipt_title">Receipt</string>
+    <string name="settings_receipt_subtitle">Header, footer and printer options.</string>
+    <string name="settings_tax_title">Tax</string>
+    <string name="settings_tax_subtitle">Default tax rate and rounding rules.</string>
+    <string name="settings_sync_title">Sync &amp; backup</string>
+    <string name="settings_sync_subtitle">Cloud sync, backup and restore.</string>
+    <string name="settings_subtitle">Personalise TillDock for your counter.</string>
+    <string name="settings_section_business">Business</string>
+    <string name="settings_section_receipt">Receipt</string>
+    <string name="settings_section_data">Data</string>
+    <string name="settings_tile_business">Business profile</string>
+    <string name="settings_tile_currency">Default currency</string>
+    <string name="settings_tile_tax">Tax rate</string>
+    <string name="settings_tile_receipt_header">Receipt header</string>
+    <string name="settings_tile_receipt_footer">Receipt footer</string>
+    <string name="settings_tile_printer">Printer setup</string>
+    <string name="settings_tile_backup">Backup &amp; restore</string>
+    <string name="settings_tile_security">Security</string>
+    <string name="settings_value_currency_format">%1$s</string>
+
+    <string name="profile_title">Your profile</string>
+    <string name="profile_subtitle">Manage how you appear to your team.</string>
+    <string name="profile_section_account">Account</string>
+    <string name="profile_section_security">Security</string>
+    <string name="profile_tile_change_password">Change password</string>
+    <string name="profile_tile_signout">Sign out</string>
+    <string name="profile_value_role_format">Role: %1$s</string>
+
+    <string name="currency_usd">USD</string>
+    <string name="status_completed">Completed</string>
+    <string name="status_voided">Voided</string>
+    <string name="status_refunded">Refunded</string>
+
+    <string name="cart_total_label_value_format">Total Â· %1$s</string>
+    <string name="payment_complete_button">Complete sale</string>
+    <string name="success_change_label">Change</string>
+    <string name="success_customer_label">Customer</string>
+    <string name="success_txn_label">Transaction</string>
+    <string name="success_method_label">Method</string>
+    <string name="success_cash_label">Cash received</string>
+    <string name="success_total_label">Total</string>
+    <string name="success_receipt_button">View receipt</string>
+    <string name="success_new_sale_button">Start new sale</string>
+    <string name="transaction_detail_not_available">Receipt is not available right now.</string>
+
+    <string name="transaction_detail_status_completed">Completed</string>
+    <string name="transaction_detail_status_voided">Voided</string>
+    <string name="transaction_detail_status_refunded">Refunded</string>
+
+    <string name="generic_retry">Retry</string>
+    <string name="generic_cancel">Cancel</string>
+    <string name="transaction_item_payment_format">%1$s</string>
+    <string name="transaction_item_time_format">%1$s</string>
+    <string name="cart_checkout_button">Checkout</string>
+
+    <string name="transaction_detail_payment">Payment</string>
+    <string name="transaction_detail_back">Back to transactions</string>
+    <string name="transaction_detail_title">Receipt</string>
+    <string name="transaction_detail_subtotal">Subtotal</string>
+    <string name="transaction_detail_tax">Tax</string>
+    <string name="transaction_detail_total">Total</string>
+    <string name="transaction_detail_payment_ref_format">Ref: %1</string>
+    <string name="transaction_detail_item_meta" formatted="false">%1$d × %2$s</string>
+
 </resources>
+
+

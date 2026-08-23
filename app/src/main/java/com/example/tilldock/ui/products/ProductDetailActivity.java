@@ -19,6 +19,8 @@ import com.example.tilldock.utils.ImageLoader;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
+import android.util.Log;
+
 import java.math.BigDecimal;
 import java.text.NumberFormat;
 import java.util.Locale;
@@ -119,6 +121,7 @@ public class ProductDetailActivity extends AppCompatActivity {
         thresholdView.setText(threshold != null ? String.valueOf(threshold) : "—");
         descriptionView.setText(safe(product.getDescription(), getString(R.string.products_label_description_empty)));
         String imageUrl = product.getImageUrl();
+        Log.d("ProductDetail", "imageUrl=[" + imageUrl + "]");
         if (imageUrl != null && !imageUrl.isEmpty()) {
             ImageLoader.get().load(imageUrl, imageView);
         } else {

@@ -19,6 +19,7 @@ public class ApiClient {
     private final CategoryApi categoryApi;
     private final ProductApi productApi;
     private final InventoryApi inventoryApi;
+    private final SalesApi salesApi;
 
     public ApiClient(String baseUrl, TokenStore tokenStore) {
         HttpLoggingInterceptor logging = new HttpLoggingInterceptor();
@@ -47,6 +48,7 @@ public class ApiClient {
         categoryApi = retrofit.create(CategoryApi.class);
         productApi = retrofit.create(ProductApi.class);
         inventoryApi = retrofit.create(InventoryApi.class);
+        salesApi = retrofit.create(SalesApi.class);
     }
 
     public AuthApi authApi() {
@@ -67,6 +69,10 @@ public class ApiClient {
 
     public InventoryApi inventoryApi() {
         return inventoryApi;
+    }
+
+    public SalesApi salesApi() {
+        return salesApi;
     }
 
     public Retrofit retrofit() {

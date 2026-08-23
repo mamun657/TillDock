@@ -77,6 +77,15 @@ public class BusinessProfileFragment extends Fragment {
         inputCurrency = view.findViewById(R.id.business_input_currency);
         inputTax = view.findViewById(R.id.business_input_tax);
 
+        View backButton = view.findViewById(R.id.business_back);
+        if (backButton != null) {
+            backButton.setOnClickListener(v -> {
+                if (!requireActivity().getSupportFragmentManager().popBackStackImmediate()) {
+                    requireActivity().finish();
+                }
+            });
+        }
+
         createButton.setOnClickListener(v -> {
             current = null;
             clearForm();

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <style name="Base.Theme.TillDock" parent="Theme.Material3.DayNight.NoActionBar">
-        <item name="colorPrimary">@color/brand_primary</item>
-        <item name="colorOnPrimary">@color/white</item>
-        <item name="colorSecondary">@color/brand_accent</item>
-        <item name="colorOnSecondary">@color/white</item>
-        <item name="android:windowBackground">#FF0F172A</item>
-        <item name="android:statusBarColor">@color/brand_primary_dark</item>
+        <item name="colorPrimary">@color/brand_primary_light</item>
+        <item name="colorOnPrimary">@color/brand_primary_dark</item>
+        <item name="colorSecondary">@color/brand_secondary</item>
+        <item name="colorOnSecondary">@color/text_inverse</item>
+        <item name="android:windowBackground">@color/surface_inverse</item>
+        <item name="android:statusBarColor">@color/surface_inverse</item>
     </style>
 </resources>

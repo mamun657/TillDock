@@ -9,16 +9,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="24dp">
+        android:padding="@dimen/space_lg">
 
         <com.google.android.material.textfield.TextInputLayout
+            style="@style/TillDock.Input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/products_label_name"
-            app:boxBackgroundMode="outline">
+            android:hint="@string/products_label_name">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/product_dialog_input_name"
+                style="@style/TillDock.Input.EditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textCapWords"
@@ -26,14 +27,15 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
+            style="@style/TillDock.Input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:hint="@string/products_label_sku"
-            app:boxBackgroundMode="outline">
+            android:layout_marginTop="@dimen/space_md"
+            android:hint="@string/products_label_sku">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/product_dialog_input_sku"
+                style="@style/TillDock.Input.EditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textCapCharacters"
@@ -41,30 +43,32 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
+            style="@style/TillDock.Input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:hint="@string/products_label_category"
-            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+            android:layout_marginTop="@dimen/space_md"
+            android:hint="@string/products_label_category">
 
             <AutoCompleteTextView
                 android:id="@+id/product_dialog_input_category"
+                style="@style/TillDock.Input.EditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="none"
                 android:focusable="false"
+                android:inputType="none"
                 android:maxLines="1" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
+            style="@style/TillDock.Input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:hint="@string/products_label_description"
-            app:boxBackgroundMode="outline">
+            android:layout_marginTop="@dimen/space_md"
+            android:hint="@string/products_label_description">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/product_dialog_input_description"
+                style="@style/TillDock.Input.EditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textMultiLine|textCapSentences"
@@ -74,18 +78,19 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="@dimen/space_md"
             android:orientation="horizontal">
 
             <com.google.android.material.textfield.TextInputLayout
+                style="@style/TillDock.Input"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="@string/products_label_purchase_price"
-                app:boxBackgroundMode="outline">
+                android:hint="@string/products_label_purchase_price">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/product_dialog_input_purchase_price"
+                    style="@style/TillDock.Input.EditText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="numberDecimal"
@@ -93,15 +98,16 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
+                style="@style/TillDock.Input"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="12dp"
+                android:layout_marginStart="@dimen/space_md"
                 android:layout_weight="1"
-                android:hint="@string/products_label_selling_price"
-                app:boxBackgroundMode="outline">
+                android:hint="@string/products_label_selling_price">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/product_dialog_input_selling_price"
+                    style="@style/TillDock.Input.EditText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="numberDecimal"
@@ -110,14 +116,15 @@
         </LinearLayout>
 
         <com.google.android.material.textfield.TextInputLayout
+            style="@style/TillDock.Input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:hint="@string/products_label_stock"
-            app:boxBackgroundMode="outline">
+            android:layout_marginTop="@dimen/space_md"
+            android:hint="@string/products_label_stock">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/product_dialog_input_stock"
+                style="@style/TillDock.Input.EditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="number"

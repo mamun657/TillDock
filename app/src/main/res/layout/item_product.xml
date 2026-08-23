@@ -3,92 +3,100 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginBottom="10dp"
+    android:layout_marginBottom="@dimen/space_sm"
     android:background="@drawable/bg_card_rounded"
     android:foreground="?attr/selectableItemBackground"
     android:gravity="center_vertical"
     android:orientation="horizontal"
-    android:padding="12dp">
+    android:padding="@dimen/space_md">
 
-    <ImageView
-        android:id="@+id/product_item_thumb"
-        android:layout_width="@dimen/product_thumb"
-        android:layout_height="@dimen/product_thumb"
-        android:background="@drawable/bg_image_rounded"
-        android:contentDescription="@string/product_label_image"
-        android:scaleType="centerCrop"
-        android:src="@drawable/ic_image_placeholder" />
+    <FrameLayout
+        android:layout_width="@dimen/product_image_size"
+        android:layout_height="@dimen/product_image_size">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_image_rounded" />
+
+        <ImageView
+            android:id="@+id/product_item_thumb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/product_label_image"
+            android:padding="@dimen/space_md"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_image_placeholder" />
+    </FrameLayout>
 
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
+        android:layout_marginStart="@dimen/space_md"
         android:layout_weight="1"
         android:orientation="vertical">
 
         <TextView
             android:id="@+id/product_item_name"
+            style="@style/TillDock.Text.Strong"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ellipsize="end"
             android:maxLines="1"
-            android:textColor="@color/text_strong"
-            android:textSize="15sp"
-            android:textStyle="bold" />
+            android:textSize="@dimen/text_md" />
 
         <TextView
             android:id="@+id/product_item_category"
+            style="@style/TillDock.Text.Body"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="2dp"
             android:ellipsize="end"
             android:maxLines="1"
-            android:textColor="@color/text_muted"
-            android:textSize="12sp" />
+            android:textSize="@dimen/text_sm" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="6dp"
+            android:layout_marginTop="@dimen/space_sm"
             android:gravity="center_vertical"
             android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/product_item_selling_price"
+                style="@style/TillDock.Text.Strong"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/text_strong"
-                android:textSize="14sp"
-                android:textStyle="bold" />
+                android:textColor="@color/brand_primary"
+                android:textSize="@dimen/text_md" />
 
             <TextView
                 android:id="@+id/product_item_stock"
+                style="@style/TillDock.Text.Body"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:textColor="@color/text_default"
-                android:textSize="12sp" />
+                android:layout_marginStart="@dimen/space_sm"
+                android:textSize="@dimen/text_sm" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
 
             <TextView
                 android:id="@+id/product_item_status_pill"
+                style="@style/TillDock.Pill.Success"
                 android:layout_width="wrap_content"
-                android:layout_height="@dimen/product_pill_height"
-                android:layout_marginStart="10dp"
-                android:background="@drawable/bg_pill_in_stock"
-                android:gravity="center"
-                android:paddingHorizontal="@dimen/status_pill_padding_h"
-                android:paddingVertical="@dimen/status_pill_padding_v"
-                android:textColor="@color/stock_success"
-                android:textSize="11sp"
-                android:textStyle="bold" />
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_xs" />
         </LinearLayout>
     </LinearLayout>
 
     <ImageButton
         android:id="@+id/product_item_overflow"
-        android:layout_width="36dp"
-        android:layout_height="36dp"
-        android:background="?attr/selectableItemBackgroundBorderless"
+        style="@style/TillDock.IconButton.Tinted"
+        android:layout_width="@dimen/icon_btn_size_sm"
+        android:layout_height="@dimen/icon_btn_size_sm"
         android:contentDescription="@string/common_edit"
         android:src="@drawable/ic_more_vert" />
 </LinearLayout>

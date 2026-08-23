@@ -9,17 +9,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="24dp">
+        android:padding="@dimen/space_lg">
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/stock_mutation_input_quantity_layout"
+            style="@style/TillDock.Input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/inventory_label_quantity"
-            app:boxBackgroundMode="outline">
+            android:hint="@string/inventory_label_quantity">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/stock_mutation_input_quantity"
+                style="@style/TillDock.Input.EditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="number"
@@ -27,14 +28,15 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
+            style="@style/TillDock.Input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:hint="@string/inventory_label_reason"
-            app:boxBackgroundMode="outline">
+            android:layout_marginTop="@dimen/space_md"
+            android:hint="@string/inventory_label_reason">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/stock_mutation_input_reason"
+                style="@style/TillDock.Input.EditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textCapSentences"

@@ -9,6 +9,7 @@ import com.example.tilldock.data.repository.BusinessRepository;
 import com.example.tilldock.data.repository.CategoryRepository;
 import com.example.tilldock.data.repository.InventoryRepository;
 import com.example.tilldock.data.repository.ProductRepository;
+import com.example.tilldock.data.repository.SalesRepository;
 import com.example.tilldock.data.repository.TokenStore;
 
 public class TillDockApplication extends Application {
@@ -21,12 +22,16 @@ public class TillDockApplication extends Application {
     private CategoryRepository categoryRepository;
     private ProductRepository productRepository;
     private InventoryRepository inventoryRepository;
+    private SalesRepository salesRepository;
     private ApiClient apiClient;
     private AuthSession authSession;
     private com.example.tilldock.ui.products.ProductViewModel productViewModel;
     private com.example.tilldock.ui.products.ProductFormViewModel productFormViewModel;
-
-    @Override
+    private com.example.tilldock.ui.sales.NewSaleViewModel newSaleViewModel;
+    private com.example.tilldock.ui.sales.PaymentViewModel paymentViewModel;
+    private com.example.tilldock.ui.transactions.TransactionsViewModel transactionsViewModel;
+    private com.example.tilldock.ui.transactions.TransactionDetailViewModel transactionDetailViewModel;
+    private com.example.tilldock.ui.reports.ReportsViewModel reportsViewModel;
     public void onCreate() {
         super.onCreate();
         instance = this;
@@ -39,10 +44,16 @@ public class TillDockApplication extends Application {
         categoryRepository = new CategoryRepository(apiClient.categoryApi());
         productRepository = new ProductRepository(apiClient.productApi());
         inventoryRepository = new InventoryRepository(apiClient.inventoryApi());
+        salesRepository = new SalesRepository(apiClient.salesApi());
         authSession = new AuthSession(tokenStore, authRepository);
         authSession.bootstrap();
         productViewModel = new com.example.tilldock.ui.products.ProductViewModel();
         productFormViewModel = new com.example.tilldock.ui.products.ProductFormViewModel();
+        newSaleViewModel = new com.example.tilldock.ui.sales.NewSaleViewModel();
+        paymentViewModel = new com.example.tilldock.ui.sales.PaymentViewModel();
+        transactionsViewModel = new com.example.tilldock.ui.transactions.TransactionsViewModel();
+        transactionDetailViewModel = new com.example.tilldock.ui.transactions.TransactionDetailViewModel();
+        reportsViewModel = new com.example.tilldock.ui.reports.ReportsViewModel();
     }
 
     public static TillDockApplication get() {
@@ -73,6 +84,10 @@ public class TillDockApplication extends Application {
         return inventoryRepository;
     }
 
+    public SalesRepository getSalesRepository() {
+        return salesRepository;
+    }
+
     public ApiClient getApiClient() {
         return apiClient;
     }
@@ -87,5 +102,25 @@ public class TillDockApplication extends Application {
 
     public com.example.tilldock.ui.products.ProductFormViewModel productFormViewModel() {
         return productFormViewModel;
+    }
+
+    public com.example.tilldock.ui.sales.NewSaleViewModel newSaleViewModel() {
+        return newSaleViewModel;
+    }
+
+    public com.example.tilldock.ui.sales.PaymentViewModel paymentViewModel() {
+        return paymentViewModel;
+    }
+
+    public com.example.tilldock.ui.transactions.TransactionsViewModel transactionsViewModel() {
+        return transactionsViewModel;
+    }
+
+    public com.example.tilldock.ui.transactions.TransactionDetailViewModel transactionDetailViewModel() {
+        return transactionDetailViewModel;
+    }
+
+    public com.example.tilldock.ui.reports.ReportsViewModel reportsViewModel() {
+        return reportsViewModel;
     }
 }

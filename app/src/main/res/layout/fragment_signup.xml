@@ -10,154 +10,188 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="24dp">
+        android:orientation="vertical">
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/signup_title"
-            android:textColor="@color/text_strong"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+            android:background="@drawable/bg_hero_gradient"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/space_xl"
+            android:paddingTop="56dp"
+            android:paddingBottom="@dimen/space_2xl">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="@string/signup_subtitle"
-            android:textColor="@color/text_muted"
-            android:textSize="14sp" />
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:background="@drawable/bg_avatar_circle"
+                android:contentDescription="@string/app_name"
+                android:padding="14dp"
+                android:src="@drawable/ic_dash_business"
+                android:tint="@color/brand_primary" />
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/signup_input_full_name_layout"
-            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:hint="@string/signup_full_name">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_lg"
+                android:text="@string/signup_title"
+                android:textColor="@color/text_on_brand"
+                android:textSize="26sp"
+                android:textStyle="bold" />
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/signup_input_full_name"
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPersonName|textCapWords"
-                android:maxLines="1" />
-        </com.google.android.material.textfield.TextInputLayout>
+                android:layout_marginTop="@dimen/space_xs"
+                android:text="@string/signup_subtitle"
+                android:textColor="@color/text_on_brand_muted"
+                android:textSize="14sp" />
+        </LinearLayout>
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/signup_input_business_name_layout"
-            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:hint="@string/signup_business_name">
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/space_xl"
+            android:paddingTop="@dimen/space_2xl"
+            android:paddingBottom="@dimen/space_xl">
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/signup_input_business_name"
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/signup_input_full_name_layout"
+                style="@style/TillDock.Input"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textCapWords"
-                android:maxLines="1" />
-        </com.google.android.material.textfield.TextInputLayout>
+                android:hint="@string/signup_full_name">
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/signup_input_email_layout"
-            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:hint="@string/signup_email">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/signup_input_full_name"
+                    style="@style/TillDock.Input.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName|textCapWords"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/signup_input_email"
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/signup_input_business_name_layout"
+                style="@style/TillDock.Input"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textEmailAddress"
-                android:maxLines="1" />
-        </com.google.android.material.textfield.TextInputLayout>
+                android:layout_marginTop="@dimen/space_md"
+                android:hint="@string/signup_business_name">
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/signup_input_phone_layout"
-            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:hint="@string/signup_phone">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/signup_input_business_name"
+                    style="@style/TillDock.Input.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/signup_input_phone"
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/signup_input_email_layout"
+                style="@style/TillDock.Input"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="phone"
-                android:maxLines="1" />
-        </com.google.android.material.textfield.TextInputLayout>
+                android:layout_marginTop="@dimen/space_md"
+                android:hint="@string/signup_email">
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/signup_input_password_layout"
-            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:hint="@string/signup_password"
-            app:endIconMode="password_toggle">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/signup_input_email"
+                    style="@style/TillDock.Input.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/signup_input_password"
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/signup_input_phone_layout"
+                style="@style/TillDock.Input"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPassword"
-                android:maxLines="1" />
-        </com.google.android.material.textfield.TextInputLayout>
+                android:layout_marginTop="@dimen/space_md"
+                android:hint="@string/signup_phone">
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/signup_input_confirm_password_layout"
-            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:hint="@string/signup_confirm_password"
-            app:endIconMode="password_toggle">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/signup_input_phone"
+                    style="@style/TillDock.Input.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/signup_input_confirm_password"
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/signup_input_password_layout"
+                style="@style/TillDock.Input"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPassword"
-                android:maxLines="1" />
-        </com.google.android.material.textfield.TextInputLayout>
+                android:layout_marginTop="@dimen/space_md"
+                android:hint="@string/signup_password"
+                app:endIconMode="password_toggle">
 
-        <TextView
-            android:id="@+id/signup_error_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:textColor="@color/error_default"
-            android:textSize="14sp"
-            android:visibility="gone" />
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/signup_input_password"
+                    style="@style/TillDock.Input.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/signup_button_submit"
-            style="@style/TillDockPrimaryButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="@string/signup_submit" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/signup_input_confirm_password_layout"
+                style="@style/TillDock.Input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_md"
+                android:hint="@string/signup_confirm_password"
+                app:endIconMode="password_toggle">
 
-        <ProgressBar
-            android:id="@+id/signup_progress"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="12dp"
-            android:visibility="gone" />
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/signup_input_confirm_password"
+                    style="@style/TillDock.Input.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/signup_button_have_account"
-            style="@style/TillDockTextButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="@string/signup_have_account" />
+            <TextView
+                android:id="@+id/signup_error_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_md"
+                android:textColor="@color/error_default"
+                android:textSize="13sp"
+                android:visibility="gone" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/signup_button_submit"
+                style="@style/TillDock.PrimaryButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_lg"
+                android:text="@string/signup_submit" />
+
+            <ProgressBar
+                android:id="@+id/signup_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/space_md"
+                android:visibility="gone" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/signup_button_have_account"
+                style="@style/TillDock.TextButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_sm"
+                android:text="@string/signup_have_account" />
+        </LinearLayout>
     </LinearLayout>
 </ScrollView>
+

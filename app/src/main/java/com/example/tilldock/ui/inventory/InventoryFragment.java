@@ -65,6 +65,15 @@ public class InventoryFragment extends Fragment {
         adapter = new InventoryAdapter(item -> showActions(item));
         recycler.setAdapter(adapter);
 
+        View backButton = view.findViewById(R.id.inventory_back);
+        if (backButton != null) {
+            backButton.setOnClickListener(v -> {
+                if (!requireActivity().getSupportFragmentManager().popBackStackImmediate()) {
+                    requireActivity().finish();
+                }
+            });
+        }
+
         viewModel.state().observe(getViewLifecycleOwner(), this::render);
         viewModel.load();
     }

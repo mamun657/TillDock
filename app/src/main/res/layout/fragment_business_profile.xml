@@ -10,216 +10,266 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="24dp">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/business_title"
-            android:textColor="@color/text_strong"
-            android:textSize="22sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="6dp"
-            android:text="@string/business_subtitle"
-            android:textColor="@color/text_muted"
-            android:textSize="14sp" />
-
-        <ProgressBar
-            android:id="@+id/business_progress"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="24dp"
-            android:visibility="gone" />
-
-        <TextView
-            android:id="@+id/business_error_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:textColor="@color/error_default"
-            android:textSize="14sp"
-            android:visibility="gone" />
+        android:orientation="vertical">
 
         <LinearLayout
-            android:id="@+id/business_empty_state"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/bg_card_rounded"
-            android:orientation="vertical"
-            android:padding="20dp"
-            android:visibility="gone">
+            android:background="@drawable/bg_hero_gradient"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/space_xl"
+            android:paddingTop="56dp"
+            android:paddingBottom="@dimen/space_xl">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/business_empty_title"
-                android:textColor="@color/text_strong"
-                android:textSize="16sp"
-                android:textStyle="bold" />
+            <ImageButton
+                android:id="@+id/business_back"
+                android:layout_width="@dimen/icon_btn_size_md"
+                android:layout_height="@dimen/icon_btn_size_md"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/common_back"
+                android:src="@drawable/ic_back" />
 
-            <TextView
-                android:layout_width="match_parent"
+            <LinearLayout
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="6dp"
-                android:text="@string/business_empty_body"
-                android:textColor="@color/text_muted"
-                android:textSize="14sp" />
+                android:layout_marginStart="@dimen/space_md"
+                android:layout_weight="1"
+                android:orientation="vertical">
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/business_button_create"
-                style="@style/TillDockPrimaryButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="@string/business_empty_action" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/business_title"
+                    android:textColor="@color/text_on_brand"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="@string/business_subtitle"
+                    android:textColor="@color/text_on_brand_muted"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_avatar_circle"
+                android:contentDescription="@string/business_title"
+                android:padding="12dp"
+                android:src="@drawable/ic_dash_business"
+                android:tint="@color/brand_primary" />
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/business_form_card"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/bg_card_rounded"
             android:orientation="vertical"
-            android:padding="20dp"
-            android:visibility="gone">
+            android:paddingHorizontal="@dimen/space_xl"
+            android:paddingTop="@dimen/space_xl"
+            android:paddingBottom="@dimen/space_xl">
 
-            <com.google.android.material.textfield.TextInputLayout
+            <ProgressBar
+                android:id="@+id/business_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/space_xl"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/business_error_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/business_label_name"
-                app:boxBackgroundMode="outline">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/business_input_name"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:inputType="textCapWords"
-                    android:maxLines="1" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
-                android:hint="@string/business_label_address"
-                app:boxBackgroundMode="outline">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/business_input_address"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:inputType="textPostalAddress"
-                    android:maxLines="2" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
-                android:hint="@string/business_label_phone"
-                app:boxBackgroundMode="outline">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/business_input_phone"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:inputType="phone"
-                    android:maxLines="1" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
-                android:hint="@string/business_label_email"
-                app:boxBackgroundMode="outline">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/business_input_email"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:inputType="textEmailAddress"
-                    android:maxLines="1" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
-                android:hint="@string/business_label_logo"
-                app:boxBackgroundMode="outline">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/business_input_logo"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:inputType="textUri"
-                    android:maxLines="1" />
-            </com.google.android.material.textfield.TextInputLayout>
+                android:layout_marginTop="@dimen/space_md"
+                android:textColor="@color/error_default"
+                android:textSize="13sp"
+                android:visibility="gone" />
 
             <LinearLayout
+                android:id="@+id/business_empty_state"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
-                android:orientation="horizontal">
+                android:background="@drawable/bg_card_rounded"
+                android:orientation="vertical"
+                android:padding="@dimen/card_padding_lg"
+                android:visibility="gone">
 
-                <com.google.android.material.textfield.TextInputLayout
-                    android:layout_width="0dp"
+                <TextView
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:hint="@string/business_label_currency"
-                    app:boxBackgroundMode="outline">
+                    android:text="@string/business_empty_title"
+                    android:textColor="@color/text_strong"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
 
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/business_input_currency"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:inputType="textCapCharacters"
-                        android:maxLength="3"
-                        android:maxLines="1" />
-                </com.google.android.material.textfield.TextInputLayout>
-
-                <com.google.android.material.textfield.TextInputLayout
-                    android:layout_width="0dp"
+                <TextView
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="12dp"
-                    android:layout_weight="1"
-                    android:hint="@string/business_label_tax"
-                    app:boxBackgroundMode="outline">
+                    android:layout_marginTop="@dimen/space_xs"
+                    android:text="@string/business_empty_body"
+                    android:textColor="@color/text_muted"
+                    android:textSize="14sp" />
 
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/business_input_tax"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:inputType="numberDecimal"
-                        android:maxLines="1" />
-                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/business_button_create"
+                    style="@style/TillDock.PrimaryButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_lg"
+                    android:text="@string/business_empty_action" />
             </LinearLayout>
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/business_button_save"
-                style="@style/TillDockPrimaryButton"
+            <LinearLayout
+                android:id="@+id/business_form_card"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:text="@string/business_action_save" />
+                android:background="@drawable/bg_card_rounded"
+                android:orientation="vertical"
+                android:padding="@dimen/card_padding_lg"
+                android:visibility="gone">
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/business_button_delete"
-                style="@style/TillDockSecondaryButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="@string/business_action_delete"
-                android:visibility="gone" />
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/TillDock.Input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/business_label_name">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/business_input_name"
+                        style="@style/TillDock.Input.EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textCapWords"
+                        android:maxLines="1" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/TillDock.Input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_md"
+                    android:hint="@string/business_label_address">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/business_input_address"
+                        style="@style/TillDock.Input.EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPostalAddress"
+                        android:maxLines="2" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/TillDock.Input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_md"
+                    android:hint="@string/business_label_phone">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/business_input_phone"
+                        style="@style/TillDock.Input.EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="phone"
+                        android:maxLines="1" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/TillDock.Input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_md"
+                    android:hint="@string/business_label_email">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/business_input_email"
+                        style="@style/TillDock.Input.EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/TillDock.Input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_md"
+                    android:hint="@string/business_label_logo">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/business_input_logo"
+                        style="@style/TillDock.Input.EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textUri"
+                        android:maxLines="1" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_md"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/TillDock.Input"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/business_label_currency">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/business_input_currency"
+                            style="@style/TillDock.Input.EditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textCapCharacters"
+                            android:maxLength="3"
+                            android:maxLines="1" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/TillDock.Input"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/space_md"
+                        android:layout_weight="1"
+                        android:hint="@string/business_label_tax">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/business_input_tax"
+                            style="@style/TillDock.Input.EditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberDecimal"
+                            android:maxLines="1" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/business_button_save"
+                    style="@style/TillDock.PrimaryButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_lg"
+                    android:text="@string/business_action_save" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/business_button_delete"
+                    style="@style/TillDock.SecondaryButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_sm"
+                    android:text="@string/business_action_delete"
+                    android:visibility="gone" />
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 </ScrollView>
+

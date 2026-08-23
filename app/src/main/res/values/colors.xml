@@ -1,23 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="brand_primary">#0F4C81</color>
-    <color name="brand_primary_dark">#0A3358</color>
-    <color name="brand_accent">#16A085</color>
-    <color name="surface_default">#FFFFFFFF</color>
-    <color name="surface_muted">#FFF5F7FA</color>
-    <color name="text_strong">#FF111827</color>
-    <color name="text_default">#FF374151</color>
-    <color name="text_muted">#FF6B7280</color>
-    <color name="border_default">#FFE5E7EB</color>
-    <color name="error_default">#FFB3261E</color>
     <color name="white">#FFFFFFFF</color>
     <color name="black">#FF000000</color>
-    <color name="stock_success">#FF2E7D32</color>
-    <color name="stock_warning">#FFF57C00</color>
-    <color name="stock_danger">#FFC62828</color>
-    <color name="stock_archived">#FF6B7280</color>
-    <color name="status_in_stock_bg">#1A2E7D32</color>
-    <color name="status_low_bg">#1AF57C00</color>
-    <color name="status_out_bg">#1AC62828</color>
-    <color name="status_archived_bg">#1A6B7280</color>
+
+    <color name="brand_primary">#FF4F46E5</color>
+    <color name="brand_primary_dark">#FF3730A3</color>
+    <color name="brand_primary_light">#FFEEF2FF</color>
+    <color name="brand_primary_subtle">#FFE0E7FF</color>
+
+    <color name="brand_secondary">#FF7C3AED</color>
+    <color name="brand_secondary_light">#FFF5F3FF</color>
+
+    <color name="brand_tertiary">#FF0EA5E9</color>
+    <color name="brand_accent">#FF0EA5E9</color>
+
+    <color name="bg_app">#FFF6F7FB</color>
+    <color name="surface_default">#FFFFFFFF</color>
+    <color name="surface_muted">#FFF1F5F9</color>
+    <color name="surface_subtle">#FFF8FAFC</color>
+    <color name="surface_inverse">#FF0F172A</color>
+
+    <color name="text_strong">#FF0F172A</color>
+    <color name="text_default">#FF334155</color>
+    <color name="text_muted">#FF64748B</color>
+    <color name="text_disabled">#FFCBD5E1</color>
+    <color name="text_inverse">#FFFFFFFF</color>
+    <color name="text_on_brand">#FFFFFFFF</color>
+    <color name="text_on_brand_muted">#CCFFFFFF</color>
+
+    <color name="border_default">#FFE2E8F0</color>
+    <color name="border_strong">#FFCBD5E1</color>
+    <color name="border_subtle">#FFF1F5F9</color>
+
+    <color name="success_default">#FF16A34A</color>
+    <color name="success_strong">#FF15803D</color>
+    <color name="success_bg">#FFDCFCE7</color>
+    <color name="success_subtle">#FFF0FDF4</color>
+
+    <color name="warning_default">#FFF59E0B</color>
+    <color name="warning_strong">#FFB45309</color>
+    <color name="warning_bg">#FFFEF3C7</color>
+    <color name="warning_subtle">#FFFFFBEB</color>
+
+    <color name="danger_default">#FFEF4444</color>
+    <color name="danger_strong">#FFB91C1C</color>
+    <color name="danger_bg">#FFFEE2E2</color>
+    <color name="danger_subtle">#FFFEF2F2</color>
+
+    <color name="info_default">#FF2563EB</color>
+    <color name="info_bg">#FFDBEAFE</color>
+
+    <color name="neutral_default">#FF64748B</color>
+    <color name="neutral_bg">#FFE2E8F0</color>
+
+    <color name="scrim">#80000000</color>
+    <color name="ripple">#1A4F46E5</color>
+
+    <color name="stock_success">#FF16A34A</color>
+    <color name="stock_warning">#FFF59E0B</color>
+    <color name="stock_danger">#FFEF4444</color>
+    <color name="stock_archived">#FF94A3B8</color>
+
+    <color name="status_in_stock_bg">#1A16A34A</color>
+    <color name="status_low_bg">#1AF59E0B</color>
+    <color name="status_out_bg">#1AEF4444</color>
+    <color name="status_archived_bg">#1A94A3B8</color>
+
+    <color name="overlay_dark_10">#1A000000</color>
+    <color name="overlay_dark_30">#4D000000</color>
+    <color name="overlay_light_60">#99FFFFFF</color>
+
+    <!-- Legacy aliases for backward compatibility -->
+    <color name="error_default">#FFEF4444</color>
+    <color name="accent_primary">#FF4F46E5</color>
+    <color name="primary">#FF4F46E5</color>
+    <color name="primary_dark">#FF3730A3</color>
+    <color name="accent">#FF7C3AED</color>
+    <color name="bg">#FFF6F7FB</color>
+    <color name="text_primary">#FF0F172A</color>
+    <color name="text_secondary">#FF64748B</color>
+    <color name="card_bg">#FFFFFFFF</color>
+    <color name="divider">#FFE2E8F0</color>
+    <color name="status_in_stock">#FF16A34A</color>
+    <color name="status_low_stock">#FFF59E0B</color>
+    <color name="status_out_of_stock">#FFEF4444</color>
+    <color name="status_archived">#FF94A3B8</color>
+    <color name="placeholder_bg">#FFF1F5F9</color>
 </resources>

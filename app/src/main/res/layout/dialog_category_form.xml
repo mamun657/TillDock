@@ -4,16 +4,17 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="24dp">
+    android:padding="@dimen/space_lg">
 
     <com.google.android.material.textfield.TextInputLayout
+        style="@style/TillDock.Input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/categories_label_name"
-        app:boxBackgroundMode="outline">
+        android:hint="@string/categories_label_name">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/category_dialog_input_name"
+            style="@style/TillDock.Input.EditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textCapWords"
@@ -21,14 +22,15 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
+        style="@style/TillDock.Input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:hint="@string/categories_label_description"
-        app:boxBackgroundMode="outline">
+        android:layout_marginTop="@dimen/space_md"
+        android:hint="@string/categories_label_description">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/category_dialog_input_description"
+            style="@style/TillDock.Input.EditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textMultiLine|textCapSentences"

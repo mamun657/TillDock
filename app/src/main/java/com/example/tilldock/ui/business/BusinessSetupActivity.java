@@ -52,6 +52,11 @@ public class BusinessSetupActivity extends AppCompatActivity {
         statusHolder.observe(this, this::renderStatus);
         errorHolder.observe(this, this::renderError);
 
+        View backButton = findViewById(R.id.business_setup_back);
+        if (backButton != null) {
+            backButton.setOnClickListener(v -> finish());
+        }
+
         saveButton.setOnClickListener(v -> attemptSave());
     }
 

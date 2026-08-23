@@ -9,24 +9,44 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="24dp">
+        android:background="@drawable/bg_hero_gradient"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/space_xl"
+        android:paddingTop="56dp"
+        android:paddingBottom="@dimen/space_lg">
 
-        <TextView
-            android:id="@+id/list_title"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/text_strong"
-            android:textSize="22sp"
-            android:textStyle="bold" />
+        <ImageButton
+            android:id="@+id/list_back"
+            android:layout_width="@dimen/icon_btn_size_md"
+            android:layout_height="@dimen/icon_btn_size_md"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/common_back"
+            android:src="@drawable/ic_back" />
 
-        <TextView
-            android:id="@+id/list_subtitle"
-            android:layout_width="match_parent"
+        <LinearLayout
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="6dp"
-            android:textColor="@color/text_muted"
-            android:textSize="14sp" />
+            android:layout_marginStart="@dimen/space_md"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/list_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_on_brand"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/list_subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/text_on_brand_muted"
+                android:textSize="13sp" />
+        </LinearLayout>
     </LinearLayout>
 
     <FrameLayout
@@ -39,7 +59,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:clipToPadding="false"
-            android:paddingHorizontal="24dp"
+            android:paddingHorizontal="@dimen/space_xl"
+            android:paddingTop="@dimen/space_md"
             android:paddingBottom="96dp" />
 
         <ProgressBar
@@ -54,10 +75,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal|top"
-            android:layout_marginHorizontal="24dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginHorizontal="@dimen/space_xl"
+            android:layout_marginTop="@dimen/space_sm"
             android:textColor="@color/error_default"
-            android:textSize="14sp"
+            android:textSize="13sp"
             android:visibility="gone" />
 
         <LinearLayout
@@ -83,7 +104,7 @@
                 android:id="@+id/list_empty_body"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="6dp"
+                android:layout_marginTop="@dimen/space_xs"
                 android:gravity="center"
                 android:textColor="@color/text_muted"
                 android:textSize="14sp" />
@@ -92,10 +113,10 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/list_button_add"
-        style="@style/TillDockPrimaryButton"
+        style="@style/TillDock.PrimaryButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="24dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginHorizontal="@dimen/space_xl"
+        android:layout_marginBottom="@dimen/space_xl"
         android:text="@string/common_add" />
 </LinearLayout>

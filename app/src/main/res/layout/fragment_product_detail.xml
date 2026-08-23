@@ -27,10 +27,10 @@
 
             <ImageButton
                 android:id="@+id/product_detail_back"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_width="@dimen/icon_btn_size_md"
+                android:layout_height="@dimen/icon_btn_size_md"
                 android:layout_gravity="top|start"
-                android:layout_margin="16dp"
+                android:layout_margin="@dimen/space_base"
                 android:background="@drawable/bg_image_rounded"
                 android:contentDescription="@string/common_back"
                 android:src="@drawable/ic_back" />
@@ -40,57 +40,54 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="20dp">
+            android:paddingHorizontal="@dimen/space_xl"
+            android:paddingTop="@dimen/space_xl"
+            android:paddingBottom="@dimen/space_xl">
 
             <TextView
                 android:id="@+id/product_detail_name"
+                style="@style/TillDock.Text.H2"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/text_strong"
-                android:textSize="22sp"
-                android:textStyle="bold" />
+                android:layout_height="wrap_content" />
 
             <TextView
                 android:id="@+id/product_detail_sku_category"
+                style="@style/TillDock.Text.Caption"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:textColor="@color/text_muted"
-                android:textSize="13sp" />
+                android:layout_marginTop="@dimen/space_xs" />
 
             <TextView
                 android:id="@+id/product_detail_status_pill"
+                style="@style/TillDock.Pill.Success"
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/product_pill_height"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/bg_pill_in_stock"
+                android:layout_marginTop="@dimen/space_md"
                 android:gravity="center"
                 android:paddingHorizontal="@dimen/status_pill_padding_h"
                 android:paddingVertical="@dimen/status_pill_padding_v"
-                android:textColor="@color/stock_success"
-                android:textSize="11sp"
-                android:textStyle="bold" />
+                android:textSize="11sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="@dimen/space_xl"
                 android:background="@drawable/bg_card_rounded"
                 android:orientation="vertical"
-                android:padding="16dp">
+                android:padding="@dimen/card_padding_lg">
 
                 <TextView
+                    style="@style/TillDock.Text.Caption"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/product_label_prices"
-                    android:textColor="@color/text_strong"
-                    android:textSize="14sp"
-                    android:textStyle="bold" />
+                    android:textAllCaps="true"
+                    android:textColor="@color/text_muted" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="@dimen/space_md"
                     android:orientation="horizontal">
 
                     <LinearLayout
@@ -100,20 +97,17 @@
                         android:orientation="vertical">
 
                         <TextView
+                            style="@style/TillDock.Text.Caption"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/product_label_purchase"
-                            android:textColor="@color/text_muted"
-                            android:textSize="12sp" />
+                            android:text="@string/product_label_purchase" />
 
                         <TextView
                             android:id="@+id/product_detail_purchase_price"
+                            style="@style/TillDock.Text.Body.Strong"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="2dp"
-                            android:textColor="@color/text_default"
-                            android:textSize="16sp"
-                            android:textStyle="bold" />
+                            android:layout_marginTop="2dp" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -123,20 +117,18 @@
                         android:orientation="vertical">
 
                         <TextView
+                            style="@style/TillDock.Text.Caption"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/product_label_selling"
-                            android:textColor="@color/text_muted"
-                            android:textSize="12sp" />
+                            android:text="@string/product_label_selling" />
 
                         <TextView
                             android:id="@+id/product_detail_selling_price"
+                            style="@style/TillDock.Text.Body.Strong"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="2dp"
-                            android:textColor="@color/text_strong"
-                            android:textSize="16sp"
-                            android:textStyle="bold" />
+                            android:textColor="@color/brand_primary" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -146,20 +138,18 @@
                         android:orientation="vertical">
 
                         <TextView
+                            style="@style/TillDock.Text.Caption"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/product_label_margin"
-                            android:textColor="@color/text_muted"
-                            android:textSize="12sp" />
+                            android:text="@string/product_label_margin" />
 
                         <TextView
                             android:id="@+id/product_detail_margin"
+                            style="@style/TillDock.Text.Body.Strong"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="2dp"
-                            android:textColor="@color/brand_accent"
-                            android:textSize="16sp"
-                            android:textStyle="bold" />
+                            android:textColor="@color/stock_success" />
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
@@ -167,23 +157,23 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
+                android:layout_marginTop="@dimen/space_md"
                 android:background="@drawable/bg_card_rounded"
                 android:orientation="vertical"
-                android:padding="16dp">
+                android:padding="@dimen/card_padding_lg">
 
                 <TextView
+                    style="@style/TillDock.Text.Caption"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/product_label_stock_value"
-                    android:textColor="@color/text_strong"
-                    android:textSize="14sp"
-                    android:textStyle="bold" />
+                    android:textAllCaps="true"
+                    android:textColor="@color/text_muted" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="@dimen/space_md"
                     android:orientation="horizontal">
 
                     <LinearLayout
@@ -193,20 +183,17 @@
                         android:orientation="vertical">
 
                         <TextView
+                            style="@style/TillDock.Text.Caption"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/product_label_stock_value"
-                            android:textColor="@color/text_muted"
-                            android:textSize="12sp" />
+                            android:text="@string/product_label_stock_value" />
 
                         <TextView
                             android:id="@+id/product_detail_stock"
+                            style="@style/TillDock.Text.Body.Strong"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="2dp"
-                            android:textColor="@color/text_strong"
-                            android:textSize="16sp"
-                            android:textStyle="bold" />
+                            android:layout_marginTop="2dp" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -216,20 +203,17 @@
                         android:orientation="vertical">
 
                         <TextView
+                            style="@style/TillDock.Text.Caption"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/product_label_low_stock_threshold"
-                            android:textColor="@color/text_muted"
-                            android:textSize="12sp" />
+                            android:text="@string/product_label_low_stock_threshold" />
 
                         <TextView
                             android:id="@+id/product_detail_threshold"
+                            style="@style/TillDock.Text.Body.Strong"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="2dp"
-                            android:textColor="@color/text_default"
-                            android:textSize="16sp"
-                            android:textStyle="bold" />
+                            android:layout_marginTop="2dp" />
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
@@ -237,37 +221,36 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
+                android:layout_marginTop="@dimen/space_md"
                 android:background="@drawable/bg_card_rounded"
                 android:orientation="vertical"
-                android:padding="16dp">
+                android:padding="@dimen/card_padding_lg">
 
                 <TextView
+                    style="@style/TillDock.Text.Caption"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/products_label_description"
-                    android:textColor="@color/text_strong"
-                    android:textSize="14sp"
-                    android:textStyle="bold" />
+                    android:textAllCaps="true"
+                    android:textColor="@color/text_muted" />
 
                 <TextView
                     android:id="@+id/product_detail_description"
+                    style="@style/TillDock.Text.Body"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:textColor="@color/text_default"
-                    android:textSize="14sp" />
+                    android:layout_marginTop="@dimen/space_sm" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:alpha="0.5"
+                android:layout_marginTop="@dimen/space_xl"
+                android:alpha="0.6"
                 android:background="@drawable/bg_card_rounded"
                 android:enabled="false"
                 android:orientation="vertical"
-                android:padding="16dp">
+                android:padding="@dimen/card_padding_lg">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -281,7 +264,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="4dp"
+                    android:layout_marginTop="@dimen/space_xs"
                     android:enabled="false"
                     android:text="@string/product_action_add_to_sale_subtitle"
                     android:textColor="@color/text_muted"
@@ -290,26 +273,26 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/product_detail_button_edit"
-                style="@style/TillDockPrimaryButton"
+                style="@style/TillDock.PrimaryButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="@dimen/space_xl"
                 android:text="@string/common_edit" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/product_detail_button_inventory"
-                style="@style/TillDockSecondaryButton"
+                style="@style/TillDock.SecondaryButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="@dimen/space_sm"
                 android:text="@string/inventory_title" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/product_detail_button_archive"
-                style="@style/TillDockSecondaryButton"
+                style="@style/TillDock.SecondaryButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="@dimen/space_sm"
                 android:text="@string/product_overflow_archive" />
 
             <ProgressBar
@@ -317,16 +300,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="@dimen/space_base"
                 android:visibility="gone" />
 
             <TextView
                 android:id="@+id/product_detail_error_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="@dimen/space_sm"
                 android:textColor="@color/error_default"
-                android:textSize="14sp"
+                android:textSize="13sp"
                 android:visibility="gone" />
         </LinearLayout>
     </LinearLayout>

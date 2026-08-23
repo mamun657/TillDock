@@ -81,6 +81,15 @@ public class CategoriesFragment extends Fragment {
 
         addButton.setOnClickListener(v -> showDialog(null));
 
+        View backButton = view.findViewById(R.id.list_back);
+        if (backButton != null) {
+            backButton.setOnClickListener(v -> {
+                if (!requireActivity().getSupportFragmentManager().popBackStackImmediate()) {
+                    requireActivity().finish();
+                }
+            });
+        }
+
         viewModel.state().observe(getViewLifecycleOwner(), this::render);
         viewModel.load();
     }

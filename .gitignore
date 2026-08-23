@@ -1,15 +1,418 @@
-*.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
+# =====================================================================
+# TillDock .gitignore
+# =====================================================================
+# Anything checked in here will never be committed.
+# Companion to .env.example, NOT a replacement for secrets management.
+# =====================================================================
+
+# ---------------------------------------------------------------------
+# 1. Operating system / editor noise
+# ---------------------------------------------------------------------
 .DS_Store
-/build
-/captures
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+desktop.ini
+*.swp
+*.swo
+*~
+*.lnk
+
+# Windows Explorer / Office lock & temp
+*.tmp
+*.bak
+*.cache
+*.old
+*.orig
+*.rej
+
+# Recycle / lock / hidden metadata
+$RECYCLE.BIN/
+*.lnk
+*.lnk.meta
+
+# IDEs / editors
+.vscode/
+.idea/
+*.iml
+*.iws
+*.ipr
+nbproject/
+.project
+.classpath
+.settings/
+.factorypath
+
+# Puku editor metadata
+.puku/
+
+# ---------------------------------------------------------------------
+# 2. Secrets & credentials
+# ---------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+
+# Token / JWT files anywhere in the repo
+token.txt
+*_token.txt
+*_jwt.txt
+me_token.txt
+ui_token.txt
+
+# Obfuscated / encoded secrets
+*.b64
+*.bin
+
+# Private keys & certs
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+*.jks
+
+# ---------------------------------------------------------------------
+# 3. UIAutomator / device inspection dumps
+# ---------------------------------------------------------------------
+# Hierarchy XML dumps produced by `uiautomator dump`
+device_*.xml
+*_ui.xml
+uidump*.xml
+home_dump*.xml
+home*_ui.xml
+*dump*.xml
+verify_*.xml
+detail*.xml
+launcher.xml
+focus_*.xml
+focus_ui.xml
+scroll_*.xml
+scroll_ui.xml
+swipe_*.xml
+tap_*.xml
+imeclosed_*.xml
+cfm*.xml
+signin_*.xml
+signup*.xml
+login_*.xml
+post_login*.xml
+post_sign*.xml
+after_login*.xml
+aftersign*.xml
+dash*.xml
+ui_*.xml
+ui*.xml
+uil*.xml
+uim*.xml
+uiq*.xml
+uir*.xml
+uis*.xml
+uin.xml
+uic.xml
+uip.xml
+uih.xml
+relaunch_*.xml
+reset_*.xml
+pw*.xml
+submit*.xml
+typed*.xml
+editform*.xml
+freshtap*.xml
+new.xml
+now.xml
+cur.xml
+prod.xml
+main.xml
+arch.xml
+im.xml
+dashboard_final.xml
+detail_*.xml
+plist*.xml
+stock_*.xml
+restore_dialog.xml
+s2.xml
+s3.xml
+s4.xml
+s5.xml
+s6.xml
+s7.xml
+s7b.xml
+s7c.xml
+s8.xml
+s9.xml
+sA.xml
+sB.xml
+sC.xml
+sD.xml
+sE.xml
+sF.xml
+sG.xml
+sH.xml
+sI.xml
+sJ.xml
+sK.xml
+sL.xml
+sM.xml
+sN.xml
+sO.xml
+sP.xml
+sQ.xml
+u3.xml
+u4.xml
+u5.xml
+u5c.xml
+u5d.xml
+u6.xml
+u7.xml
+u8.xml
+u9.xml
+u10.xml
+u11.xml
+u12.xml
+u13.xml
+u14.xml
+u15.xml
+u16.xml
+u17.xml
+u18.xml
+u19.xml
+u20.xml
+u21.xml
+u22.xml
+u23.xml
+u24.xml
+u25.xml
+u26.xml
+u27.xml
+u28.xml
+u29.xml
+u30.xml
+u31.xml
+uit3.xml
+uit4.xml
+uit5.xml
+uit6a.xml
+uit6b.xml
+x1.xml
+
+# Any other XML hierarchy dump (matches android.uiautomator pattern)
+*hierarchy*.xml
+*uiautomator*.xml
+*window_dump*.xml
+
+# ---------------------------------------------------------------------
+# 4. Screenshots & visual test evidence
+# ---------------------------------------------------------------------
+# Device / uiautomator / adb screenshots (NOT app drawables)
+screenshot_*.png
+screenshot_*.jpg
+screen_*.png
+screen_*.jpg
+scr_*.png
+device_*.png
+device_*.jpg
+dump_*.png
+dump_*.jpg
+snap*.png
+snap*.jpg
+captures/
+
+# UI debug screenshots produced by sample / trace scripts
+*_evidence.png
+*_evidence.jpg
+*_test_*.png
+*_test_*.jpg
+trace_*.png
+
+# ---------------------------------------------------------------------
+# 5. Logs
+# ---------------------------------------------------------------------
+*.log
+*.out
+*.err
+logcat_*.txt
+*_log.txt
+*_logs.txt
+gradle_*.log
+gradle_*.out
+gradle_*.err
+backend_stdout.log
+backend_stderr.log
+backend.log
+app.full.out
+app.full.err
+app.out
+app.err
+bd.out
+bd.err
+
+# ---------------------------------------------------------------------
+# 6. Temporary debug / request-response dumps
+# ---------------------------------------------------------------------
+*_response.json
+*_payload.json
+*_payload.txt
+*_request.json
+*_resp.json
+*_req.json
+r-out.json
+r-in.json
+bad.json
+bad-resp.json
+config.json
+login.json
+signup.json
+signup-body.json
+signup_pre.json
+test1.json
+test1.cmd
+payload.txt
+psql_args.txt
+precreate_email.txt
+emails.txt
+activities.txt
+schema_dump.txt
+flyway_history.txt
+smoke.txt
+windows.txt
+window_logs.txt
+
+# Tokenized debug blobs
+fk.b64
+fk.bin
+rp.bin
+wp.bin
+
+# Generic debug evidence
+*debug*.txt
+*debug*.log
+*debug*.json
+*debug*.bin
+
+# ---------------------------------------------------------------------
+# 7. Android build / IDE output
+# ---------------------------------------------------------------------
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+bin/
+gen/
+out/
+release/
+captures/
 .externalNativeBuild
 .cxx
+
+# Gradle
+.gradle/
+build/
+*/build/
+*/*/build/
+
+# Android Studio / IntelliJ
 local.properties
+/local.properties
+*.iml
+.idea/
+/.idea/
+
+# Keystore files
+*.jks
+*.keystore
+
+# Proguard mapping outputs (keep proguard-rules.pro, ignore mapping artefacts)
+proguard/
+*.hprof
+*.lst
+
+# Crash logs
+hs_err_pid*
+
+# Test results
+test-output/
+test-results/
+test_*.xml
+TEST-*.xml
+
+# ---------------------------------------------------------------------
+# 8. Backend (Spring Boot / Gradle) build output
+# ---------------------------------------------------------------------
+backend/build/
+backend/target/
+backend/out/
+backend/bin/
+*.jar
+!gradle/wrapper/gradle-wrapper.jar
+
+# Spring Boot fat-jar extracted layout
+backend/lib-extracted/
+backend/BOOT-INF/
+backend/META-INF/
+backend/classes/
+backend/generated/
+backend/tmp/
+
+# Embedded PostgreSQL data directory (used for local dev)
+backend/.pgdata/
+backend/data/
+backend/dbdata/
+
+# Local config overrides (keep .env.example tracked, ignore real .env)
+backend/.env
+backend/.env.local
+backend/.env.*.local
+backend/run_env.ps1
+
+# PID / port / process control
+*.pid
+pid.txt
+catid.txt
+backend/catid.txt
+backend/pid.txt
+
+# Uploaded user content (runtime artifacts)
+backend/uploads/
+uploads/
+!backend/uploads/.gitkeep
+
+# Log directory (runtime)
+backend/logs/
+
+# Compiled bytecode
+backend/lib-extracted/BOOT-INF/classes/
+backend/lib-extracted/BOOT-INF/lib/
+
+# ---------------------------------------------------------------------
+# 9. Throwaway shell / script artifacts
+# ---------------------------------------------------------------------
+_t.ps1
+_t.cmd
+_t.bat
+test-bad.ps1
+test-wrong.ps1
+tw.ps1
+write-bad.ps1
+backend/write-bad.ps1
+backend/run-cp.ps1
+backend/run-detach.ps1
+backend/run-direct.ps1
+
+# ---------------------------------------------------------------------
+# 10. Build / CI caches
+# ---------------------------------------------------------------------
+.cache/
+.parcel-cache/
+.eslintcache
+.node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Maven (if ever used)
+.mvn/
+mvnw
+mvnw.cmd
+mvn/wrapper/maven-wrapper.jar

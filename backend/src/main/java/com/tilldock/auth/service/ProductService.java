@@ -80,6 +80,25 @@ public class ProductService {
         return ProductDto.from(product);
     }
 
+    @Transactional(readOnly = true)
+    public Product getByIdAndMerchant(UUID productId, UUID merchantId) {
+        Business business = businesses.findByMerchantId(merchantId).orElse(null);
+        if (business == null) return null;
+        return products.findByIdAndBusinessId(productId, business.getId()).orElse(null);
+    }
+
+    @Transactional
+    public void decrementStock(UUID productId, UUID merchantId, int quantity) {
+        Business business = businesses.findByMerchantId(merchantId).orElse(null);
+        if (business == null) return;
+        Product product = products.findByIdAndBusinessId(productId, business.getId()).orElse(null);
+        if (product == null) return;
+        int previous = product.getStockQuantity();
+        int next = Math.max(0, previous - quantity);
+        product.setStockQuantity(next);
+        products.save(product);
+    }
+
     @Transactional
     public ProductDto createForMerchant(UUID merchantId, ProductRequest req) {
         Business business = requireBusiness(merchantId);
