@@ -416,3 +416,30 @@ yarn-error.log*
 mvnw
 mvnw.cmd
 mvn/wrapper/maven-wrapper.jar
+
+# ---------------------------------------------------------------------
+# Additional transient inspection artifacts
+# ---------------------------------------------------------------------
+*.ps1.log
+*.response
+*.request
+*.trace
+*.dump
+debug_*.json
+tmp_*.json
+response_*.json
+request_*.json
+*_response.json
+*_request.json
+*_payload.json
+*_resp.json
+*_req.json
+*_out.txt
+*_full.txt
+*_click.txt
+*_token.txt
+*.bin
+screens/
+reports/
+inspection/
+extracted/
