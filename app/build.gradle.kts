@@ -19,7 +19,11 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
-        buildConfigField("String", "API_BASE_URL", "\"http://10.0.2.2:8080/\"")
+        // API base URL: default is 10.0.2.2 (Android emulator -> host loopback).
+        // For physical devices, run `adb reverse tcp:8080 tcp:8080` so 127.0.0.1 works,
+        // OR override via gradle.properties:  API_BASE_URL=http://192.168.x.x:8080/
+        val baseUrl: String = (project.findProperty("API_BASE_URL") as String?) ?: "http://10.0.2.2:8080/"
+        buildConfigField("String", "API_BASE_URL", "\"$baseUrl\"")
     }
 
     buildTypes {

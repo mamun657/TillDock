@@ -7,7 +7,17 @@ Get-Content '.\.env' | ForEach-Object {
         [System.Environment]::SetEnvironmentVariable($k.Trim(), $v.Trim(), 'Process')
     }
 }
-$env:JAVA_HOME = 'C:\Program Files\Java\jdk-26.0.2'
+if (-not $env:JAVA_HOME) {
+    # Fall back to common install locations; override with $env:JAVA_HOME for your machine.
+    $candidates = @(
+        'C:\Program Files\Java\jdk-21',
+        'C:\Program Files\Java\jdk-17',
+        'C:\Program Files\Java\jdk-26.0.2',
+        'C:\Program Files\Eclipse Adoptium\jdk-21.0.5.11-hotspot'
+    )
+    foreach ($c in $candidates) { if (Test-Path "$c\bin\java.exe") { $env:JAVA_HOME = $c; break } }
+}
+if (-not (Test-Path "$env:JAVA_HOME\bin\java.exe")) { throw "JAVA_HOME not set and no JDK found. Set `$env:JAVA_HOME before running." }
 Remove-Item 'C:\TillDock\backend\logs\backend.log' -ErrorAction SilentlyContinue
 New-Item -ItemType Directory -Force -Path C:\TillDock\backend\logs | Out-Null
 $libPath = 'C:\TillDock\backend\target\extracted\BOOT-INF\lib'
